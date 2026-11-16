@@ -26,6 +26,7 @@ def test_completion_returns_sql_and_token_counts(monkeypatch: pytest.MonkeyPatch
         assert request.url.path == "/v1/chat/completions"
         assert request.headers["authorization"] == "Bearer secret"
         body = request.read().decode()
+        assert '"response_format":{"type":"json_object"}' in body.replace(" ", "")
         assert "Do not invent a year" in body
         assert "este año" in body
         assert str(date.today().year) in body

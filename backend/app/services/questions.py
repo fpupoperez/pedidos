@@ -188,14 +188,52 @@ def _is_amount(node: exp.Expression) -> bool:
 
 
 def _sql_from_model(text: str) -> str:
-    """Require one JSON object with a non-empty sql string. Extra keys are ignored."""
-    try:
-        payload = json.loads(text)
-    except json.JSONDecodeError as exc:
-        raise ApiError(502, "The model response was not valid.") from exc
-    if not isinstance(payload, dict):
+    """Require the object {"sql": "<SELECT>"}. Any other shape is rejected.
+
+    A fenced block or a short preface is still read, then the object is checked.
+    """
+    payload = _json_object(text)
+    if set(payload) != {"sql"}:
         raise ApiError(502, "The model response was not valid.")
     sql = payload.get("sql")
     if not isinstance(sql, str) or not sql.strip():
         raise ApiError(502, "The model response was not valid.")
     return sql
+
+
+def _json_object(text: str) -> dict[str, object]:
+    """Parse the model text as one JSON object. Fences and surrounding words are removed."""
+    candidate = _without_fence(text.strip())
+    payload = _loads_object(candidate)
+    if payload is not None:
+        return payload
+    start = candidate.find("{")
+    end = candidate.rfind("}")
+    if start >= 0 and end > start:
+        payload = _loads_object(candidate[start : end + 1])
+        if payload is not None:
+            return payload
+    raise ApiError(502, "The model response was not valid.")
+
+
+def _without_fence(text: str) -> str:
+    """Drop one surrounding Markdown fence. The language tag on the first line is ignored."""
+    if not text.startswith("```"):
+        return text
+    lines = text.splitlines()
+    if lines and lines[0].startswith("```"):
+        lines = lines[1:]
+    if lines and lines[-1].strip() == "```":
+        lines = lines[:-1]
+    return "\n".join(lines).strip()
+
+
+def _loads_object(text: str) -> dict[str, object] | None:
+    """Return a JSON object, or None when the text is not one."""
+    try:
+        payload = json.loads(text)
+    except json.JSONDecodeError:
+        return None
+    if isinstance(payload, dict):
+        return payload
+    return None
