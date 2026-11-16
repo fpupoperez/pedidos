@@ -6,9 +6,10 @@ import pytest
 from fastapi.testclient import TestClient
 
 from app.core.config import get_settings
+from app.core.errors import ApiError
 from app.main import create_app
 from app.providers.fake import SPAIN_MARCH, TOP_CUSTOMERS, FakeProvider
-from app.services.questions import _count_when_asked, _translate_stored_names
+from app.services.questions import _count_when_asked, _sql_from_model, _translate_stored_names
 
 CSV = "\n".join(
     [
@@ -43,6 +44,19 @@ def test_spain_in_march_and_top_customers(client: TestClient) -> None:
     top = client.post("/api/v1/questions", json={"question": TOP_CUSTOMERS})
     assert top.status_code == 200
     assert "top_customers" in top.json()["data"]["sql"]
+
+
+def test_fenced_model_json_is_accepted() -> None:
+    """A Markdown fence around the object is still one sql string."""
+    text = "```json\n{\"sql\": \"SELECT SUM(amount) FROM orders WHERE country = 'Estados Unidos'\"}\n```"
+    sql = _sql_from_model(text)
+    assert "Estados Unidos" in sql
+    with pytest.raises(ApiError) as caught:
+        _sql_from_model("not-json")
+    assert caught.value.status_code == 502
+    with pytest.raises(ApiError) as extra:
+        _sql_from_model('{"sql": "SELECT country FROM orders", "note": "extra"}')
+    assert extra.value.status_code == 502
 
 
 def test_english_words_use_the_stored_spanish_names() -> None:

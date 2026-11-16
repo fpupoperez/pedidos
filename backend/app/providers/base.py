@@ -5,8 +5,9 @@ from typing import Protocol
 from app.domain.countries import CANONICAL_COUNTRIES
 
 SYSTEM_PROMPT = f"""
-You answer questions about imported orders. Reply with one JSON object and no other text.
-The object has one string field, sql. The value is one PostgreSQL SELECT.
+You answer questions about imported orders.
+Reply with this JSON object and no other text, no Markdown, and no extra keys:
+{{"sql": "<one PostgreSQL SELECT>"}}
 
 Use only these relations:
 - orders(order_date, customer, country, product, amount, status)

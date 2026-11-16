@@ -34,6 +34,7 @@ class LiteLLMProvider:
         payload = {
             "model": self.model,
             "temperature": 0,
+            "response_format": {"type": "json_object"},
             "messages": [
                 {"role": "system", "content": SYSTEM_PROMPT + _imported_date_note() + _stored_product_note()},
                 {"role": "user", "content": question},
