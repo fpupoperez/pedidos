@@ -47,6 +47,14 @@ Status changes go through `transition_status` and `SELECT ... FOR UPDATE`. The h
 
 Retry accepts a `failed` task whose reason is `publish_failed` or `retries_exhausted`, or a `processing` task whose `updated_at` is older than `ack_wait`. Completed, cancelled, and permanent failures stay 409.
 
+## Duplicate files and duplicate orders
+
+The upload is identified by the SHA-256 of the raw bytes. The filename is not part of the hash. `create_import` refuses the bytes when a task with that hash is `pending`, `processing`, or `completed`, and the response is 409 naming that task id. The partial unique index `uq_tasks_active_hash` is the same rule in the database, so two uploads of those bytes at the same time cannot both insert a task. A `failed` or `cancelled` task does not hold the hash. Cancel rolls the order insert back, so those bytes can be imported again without leaving a second copy of a completed load.
+
+Inside one file, a repeated business row is dropped. The key is date, customer, country, product, amount, and status. The first copy is imported and the extra is counted as `duplicateRows`. That key applies only inside the file being cleaned. Two different files that contain the same orders are both imported, because their bytes differ.
+
+This CSV has no order id. In a real feed where the source system provides one, the durable check is that id. `orders` would carry it under a unique constraint. Each row is inserted on that constraint, and a row whose id is already stored is skipped and counted as a duplicate. The first copy stays. A renamed file, a file with one extra line, or the same order sent again later can arrive without creating a second row. The file hash can still reject an identical upload before any row is read. The order id is what prevents duplicate data when the file is not identical. The six-field key used here is the stand-in for that id.
+
 ## How the model is called
 
 There are two providers, `fake` and `litellm`. There is no third provider. Tests force `fake`. An unknown provider name is 502 and does not touch the database.
