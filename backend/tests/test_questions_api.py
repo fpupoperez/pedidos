@@ -8,6 +8,7 @@ from fastapi.testclient import TestClient
 from app.core.config import get_settings
 from app.main import create_app
 from app.providers.fake import SPAIN_MARCH, TOP_CUSTOMERS, FakeProvider
+from app.services.questions import _count_when_asked, _translate_stored_names
 
 CSV = "\n".join(
     [
@@ -42,6 +43,48 @@ def test_spain_in_march_and_top_customers(client: TestClient) -> None:
     top = client.post("/api/v1/questions", json={"question": TOP_CUSTOMERS})
     assert top.status_code == 200
     assert "top_customers" in top.json()["data"]["sql"]
+
+
+def test_english_words_use_the_stored_spanish_names() -> None:
+    """keyboard and Spain become the spellings stored on the orders."""
+    sql = _translate_stored_names(
+        "SELECT SUM(amount) FROM orders WHERE product = 'keyboards' AND country = 'Spain'",
+        {"teclado": "Teclado"},
+    )
+    assert "Teclado" in sql
+    assert "España" in sql
+    assert "keyboard" not in sql
+    kept = _translate_stored_names(
+        "SELECT SUM(amount) FROM orders WHERE product = 'keyboard'",
+        {},
+    )
+    assert "keyboard" in kept
+
+
+def test_how_many_sales_counts_rows(client: TestClient, monkeypatch: pytest.MonkeyPatch) -> None:
+    """cuántas ventas counts rows. A model sum of amount is not the answer."""
+    uploaded = client.post("/api/v1/imports", files={"file": ("orders.csv", CSV.encode(), "text/csv")})
+    assert uploaded.status_code == 202
+
+    def sums(self: FakeProvider, question: str) -> tuple[str, int, int]:
+        return (
+            '{"sql": "SELECT COALESCE(SUM(amount), 0) AS total_amount FROM orders WHERE product = \'teclado\'"}',
+            0,
+            0,
+        )
+
+    monkeypatch.setattr(FakeProvider, "complete", sums)
+    response = client.post("/api/v1/questions", json={"question": "¿cuántas ventas de teclados tuvimos?"})
+    assert response.status_code == 200
+    data = response.json()["data"]
+    assert "COUNT(*)" in data["sql"]
+    assert "SUM(amount)" not in data["sql"]
+    assert data["rows"] == [["2"]]
+    kept = _count_when_asked(
+        "¿cuánto vendimos en España en marzo?",
+        "SELECT COALESCE(SUM(amount), 0) AS total_amount FROM orders",
+    )
+    assert "SUM(amount)" in kept
 
 
 def test_invalid_payload_does_not_touch_the_database(client: TestClient, monkeypatch: pytest.MonkeyPatch) -> None:

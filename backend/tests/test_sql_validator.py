@@ -26,6 +26,22 @@ def test_public_prefix_and_cte_are_allowed() -> None:
     assert "recent" in wrapped
 
 
+def test_product_filter_ignores_case() -> None:
+    """A lowercase product literal still matches the stored spelling."""
+    sql, _truncated = validate_sql(
+        "SELECT SUM(amount) FROM orders WHERE country = 'Chile' AND product = 'teclado'",
+        row_limit=200,
+    )
+    assert "LOWER(product) = LOWER('teclado')" in sql
+    assert "country = 'Chile'" in sql
+    listed, _truncated = validate_sql("SELECT product FROM orders WHERE product IN ('Teclado', 'mouse')", row_limit=200)
+    assert "LOWER(product) IN (LOWER('Teclado'), LOWER('mouse'))" in listed
+    pattern, _truncated = validate_sql("SELECT product FROM orders WHERE product LIKE 'tec%'", row_limit=200)
+    assert "ILIKE 'tec%'" in pattern
+    kept, _truncated = validate_sql("SELECT product FROM orders", row_limit=200)
+    assert "LOWER(product)" not in kept
+
+
 def test_writes_and_hidden_statements_are_rejected() -> None:
     """Writes, a second statement, pg_ functions, and SELECT INTO do not reach the database."""
     cases = {
