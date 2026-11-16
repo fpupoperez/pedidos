@@ -20,6 +20,11 @@ retry_task republishes publish_failed, retries_exhausted, and a processing task 
 download_task_file returns the original CSV bytes, not the JSON envelope.
 list_task_rejections lists lines that were not imported. Those rows stay after cancel.
 list_orders reads committed rows. Pass taskId to see one file.
+ask_question accepts a question and runs one read-only SELECT.
+Allowed relations are orders, sales_by_month_country, and top_customers.
+top_customers is the global ten. A filtered question uses orders.
+A rejected statement is 422 and starts with "Rejected by sql_guard:".
+A bad model payload is 502 and does not touch the database.
 
 Do not send a JSON body on GET.
 
@@ -35,4 +40,5 @@ OPENAPI_TAGS = [
     {"name": "Imports", "description": "Upload a CSV. create_import returns a task id."},
     {"name": "Tasks", "description": "Poll status, cancel, retry, and download the original file."},
     {"name": "Orders", "description": "Read orders an import has committed."},
+    {"name": "Questions", "description": "One read-only SELECT. Writes and other tables are refused."},
 ]
