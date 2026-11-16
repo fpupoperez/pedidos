@@ -11,8 +11,6 @@ FastAPI service in `backend/app`. JSON routes return `{session_auth, errors, suc
 | `app/services/cleaning.py` | Pure CSV cleaner. Raises `CleanError` only for a bad header. |
 | `app/domain/countries.py` | Canonical country names. |
 | `app/core/telemetry.py` | Stdout when no OTLP endpoint is set. Tests use an in-memory exporter. |
-| `app/db/models.py` | Tasks, orders, and rejections. |
-| `migrations/` | Alembic. `001` creates the tables and views. `002` creates `orders_reader`. |
 
 OpenAPI is `/api/v1/docs`. `operation_id` values stay stable.
 
