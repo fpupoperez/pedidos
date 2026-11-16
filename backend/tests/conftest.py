@@ -41,6 +41,13 @@ def span_exporter() -> InMemorySpanExporter:
 
 
 @pytest.fixture
+def finished_spans() -> InMemorySpanExporter:
+    """The same exporter the test process configured. Clear it before each test."""
+    _EXPORTER.clear()
+    return _EXPORTER
+
+
+@pytest.fixture
 def migrated() -> Engine:
     """Upgrade the test database and remove import rows after the test.
 
