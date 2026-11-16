@@ -1,58 +1,99 @@
-# Pedidos
+# Orders
 
-API para cargar un CSV de pedidos y responder preguntas de solo lectura sobre lo ya importado.
+HTTP API and worker that import a CSV of orders into PostgreSQL and answer read-only questions about the imported rows.
+
+## Architecture
 
 ```text
-CSV  ->  API  ->  Postgres (tasks, orders)
-              ->  NATS JetStream  ->  worker  ->  Postgres
-pregunta  ->  API  ->  orders_reader  ->  orders / vistas
+                         +------------------+
+                         |      client      |
+                         +---------+--------+
+                                   |
+                    CSV, status, file, orders, question
+                                   |
+                                   v
+                    +------------------------------+
+                    | API  FastAPI  :8000          |
+                    | backend/                     |
+                    |                              |
+                    |  POST /imports               |
+                    |    write CSV under DATA_DIR  |
+                    |    insert task               |
+                    |  GET  /tasks, /orders, /file |
+                    |  POST /questions             |
+                    |    provider -> SQL guard     |
+                    +--+-----------+------------+--+
+                       |           |            |
+          orders.import|           |            | SELECT
+          {"taskId"}   |           |            |
+                       v           |            v
+              +----------------+   |   +----------------------+
+              | NATS JetStream |   |   | orders_reader        |
+              | stream ORDERS  |   |   | read-only            |
+              | :4222          |   |   +----------+-----------+
+              +--------+-------+   |              |
+                       |           |              |
+                       | push      |              |
+                       v           |              |
+              +----------------+   |              |
+              | worker         |   |              |
+              | queue group    |   |              |
+              | orders_import_ |   |              |
+              | worker         |   |              |
+              +--------+-------+   |              |
+                       |           |              |
+                       | read CSV  | write task,  |
+                       | clean     | orders,      |
+                       v           | rejections   v
+              +----------------------------------------------+
+              | PostgreSQL 16  :5432                         |
+              |  tasks, orders, import_rejections            |
+              |  sales_by_month_country, top_customers       |
+              +----------------------------------------------+
+
+  DATA_DIR/uploads is one directory shared by the API and the worker.
+  With NATS_DELIVERY=inline the API calls the worker in process and skips NATS.
 ```
 
-El API guarda el archivo, crea una tarea y publica `orders.import`. El worker, en el grupo `orders_import_worker`, limpia el CSV y confirma los pedidos en una transacción. Una pregunta se convierte en un único `SELECT`, el guardia lo revisa y `orders_reader` lo ejecuta. No hay Celery.
+| Piece | Role |
+| --- | --- |
+| `backend/` | FastAPI service. Accepts the CSV, stores the task, and serves status, the original file, orders, and questions. |
+| `worker/` | JetStream push consumer. Queue group `orders_import_worker`. Cleans one file and commits its orders. |
+| PostgreSQL 16 | Tasks, orders, rejections, and the views `sales_by_month_country` and `top_customers`. |
+| NATS JetStream | Stream `ORDERS`, subject `orders.import`. The message body is `{"taskId": "<uuid>"}`. |
+| `orders_reader` | Read-only role used by questions. |
 
-## Cómo ejecutarlo
+The API publishes after the task row is committed. The worker and the API share the upload directory. Questions run one checked `SELECT`. OpenAPI is at `/api/v1/docs`.
 
-Hace falta Python 3.11 y Docker.
+## Run
+
+Requires Python 3.11.
 
 ```bash
 python3.11 -m venv .venv
 .venv/bin/pip install -r backend/requirements-dev.txt
-cp .env.example infra/.env
+```
+
+Generate the sample file and start the API from `backend/`:
+
+```bash
 make csv
-make up
+cd backend && ../.venv/bin/python -m uvicorn app.main:app --reload
 ```
 
-`make csv` escribe `data/samples/orders.csv`. `make up` levanta Postgres, NATS, el API y el worker. El API aplica las migraciones al arrancar. La documentación queda en `http://127.0.0.1:8000/api/v1/docs`.
-
-Sube el archivo:
+Apply the schema once, against the database in `DATABASE_URL`:
 
 ```bash
-curl -s -F "file=@data/samples/orders.csv;type=text/csv" http://127.0.0.1:8000/api/v1/imports
+cd backend && ../.venv/bin/alembic upgrade head
 ```
 
-La respuesta es 202 y trae `data.taskId`. Consulta el estado, descarga el CSV original y cancela solo si sigue pendiente o en proceso:
-
-```bash
-curl -s http://127.0.0.1:8000/api/v1/tasks/TASK_ID
-curl -s -D - -o pedidos.csv http://127.0.0.1:8000/api/v1/tasks/TASK_ID/file
-curl -s -X POST http://127.0.0.1:8000/api/v1/tasks/TASK_ID/cancel
-```
-
-`sourceFile` es esa misma URL. Una pregunta:
-
-```bash
-curl -s -H "Content-Type: application/json" \
-  -d '{"question":"¿cuánto vendimos en España en marzo?"}' \
-  http://127.0.0.1:8000/api/v1/questions
-```
-
-Para correr el API y el worker fuera de Docker, crea antes la base `orders`, aplica `alembic upgrade head` desde `backend/` y exporta las variables de `.env.example`. El worker se arranca desde la raíz:
+Start the worker from the repository root, with the same database, `DATA_DIR`, and `NATS_URL` as the API:
 
 ```bash
 PYTHONPATH=backend .venv/bin/python -m worker.main
 ```
 
-Comprobaciones:
+Copy `.env.example` and export the variables you need. `NATS_DELIVERY=inline` runs the import in the API process. `jetstream` publishes to NATS. Tests use `orders_test` and `LLM_PROVIDER=fake`.
 
 ```bash
 make lint
@@ -60,24 +101,30 @@ make types
 make test
 ```
 
-`make test` no usa la base `orders` ni NATS. `make test-all` exige cobertura del 90 por ciento. `make hooks` instala Ruff antes del commit, y mypy con pytest antes del push.
+Upload, poll, download, and ask:
 
-## Decisiones
+```bash
+curl -s -F "file=@data/samples/orders.csv;type=text/csv" http://127.0.0.1:8000/api/v1/imports
+curl -s http://127.0.0.1:8000/api/v1/tasks/TASK_ID
+curl -s -o pedidos.csv http://127.0.0.1:8000/api/v1/tasks/TASK_ID/file
+curl -s -H "Content-Type: application/json" \
+  -d '{"question":"¿cuánto vendimos en España en marzo?"}' \
+  http://127.0.0.1:8000/api/v1/questions
+```
 
-PostgreSQL 16 es la única base: las vistas, `NUMERIC` y el rol de solo lectura tienen que coincidir en local y en Compose. El CSV acepta cabeceras en español o en inglés. El país se guarda con un nombre canónico en español (`Spain` y `Espana` pasan a `España`). Un duplicado dentro del archivo conserva la primera fila. Un mismo contenido solo puede tener una tarea `pending`, `processing` o `completed`.
+## Deploy
 
-Cada tarea guarda un resumen de conteos. `phase` no se guarda: se deduce del estado, y `processing` se muestra como `importing`. Cancelar revierte la inserción de pedidos; los rechazos ya confirmados se quedan. Todo cambio de estado usa `SELECT ... FOR UPDATE`. Si el proceso muere en `processing`, la siguiente entrega retoma el trabajo y vuelve a insertar. El reintento de una caída de base lo hace JetStream, con esperas de 2, 4 y 8 segundos. El worker no duerme.
+Docker Compose runs PostgreSQL, NATS, the API, and the worker. Images copy the source. The API runs `alembic upgrade head` on startup. Both services mount one volume at `/app/data`.
 
-Cada importación es un trazo. El `traceparent` viaja en la cabecera de NATS. Sin un endpoint OpenTelemetry, los trazos de negocio salen por stdout. Las preguntas usan el rol `orders_reader`. Los tests fuerzan el proveedor `fake`. El grupo de cola de JetStream sustituye a Celery. La inserción de un archivo es una transacción.
+```bash
+cp .env.example infra/.env
+make up
+```
 
-## Con más tiempo
+Set `LLM_API_KEY`, `LLM_API_BASE`, and `LLM_MODEL` in `infra/.env` when `LLM_PROVIDER=litellm`. That file is not committed.
 
-Activaría la autenticación que ya prevé `session_auth` y demostraría un segundo réplica del worker bajo carga.
+Published ports: PostgreSQL `5432`, NATS `4222`, API `8000`. After a code change, rebuild the service you changed:
 
-## Cómo usé la IA
-
-Le pedí a un asistente de código que implementara el enunciado con modelos tipados, sobre, pruebas, lint y una estructura clara, y que el trabajo en segundo plano fuera NATS en modo push con grupo de cola, no Celery. Le pedí también el bloqueo `SELECT ... FOR UPDATE`, telemetría de punta a punta con salida a stdout si no hay colector, el resumen de filas para poder actuar, y el enlace para descargar el CSV original.
-
-Acepté el diseño en el que JetStream reintenta una caída de base y el handler no cuenta reintentos ni duerme. Acepté que `top_customers` sea el ranking global de diez y que una pregunta filtrada use `orders`. Acepté dejar los archivos de agentes fuera del repositorio.
-
-Corregí los commits para que el autor fuera solo el mío, sin un trailer de coautor. Corregí un merge que había borrado el fixture de migraciones y las notas de la base en el README del API. No dejé ninguna clave de modelo en el repositorio: los tests usan `fake` y la clave, si hace falta, vive en `infra/.env`.
+```bash
+docker compose --env-file infra/.env -f infra/compose.yaml up --build
+```
