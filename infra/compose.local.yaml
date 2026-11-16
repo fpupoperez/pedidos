@@ -1,0 +1,12 @@
+services:
+  postgres:
+    ports: !override
+      - "5433:5432"
+  nats:
+    ports: !override
+      - "4223:4222"
+  api:
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    ports: !override
+      - "8001:8000"

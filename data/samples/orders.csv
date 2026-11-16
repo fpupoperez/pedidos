@@ -1,0 +1,1056 @@
+fecha,cliente,pais,producto,importe,estado
+13/03/2024,Luis Ortega,Italia,Cable,10.50,pendiente
+2024-02-02,Elena Costa,México,Lampara,11.50,pagado
+2024-03-03,Elena Costa,Italia,Teclado,12.50,enviado
+2024-04-04,Elena Costa,Estados Unidos,Silla,13.50,enviado
+2024-05-05,Luis Ortega,Estados Unidos,Lampara,14.50,pendiente
+2024-06-06,Elena Costa,México,Lampara,15.50,pendiente
+2024-07-07,Ana Ruiz,Italia,Lampara,16.50,pendiente
+2024-08-08,Pedro Navas,Chile,Teclado,17.50,pendiente
+2024-09-09,Luis Ortega,Alemania,Monitor,18.50,enviado
+2024-10-10,Ana Ruiz,España,Monitor,19.50,pendiente
+2024-11-11,Pedro Navas,Alemania,Monitor,20.50,enviado
+2024-12-12,Luis Ortega,Italia,Lampara,21.50,enviado
+2024-01-13,Luis Ortega,Argentina,Teclado,22.50,pagado
+2024-02-14,Elena Costa,Francia,Monitor,23.50,pendiente
+2024-03-15,Luis Ortega,Chile,Teclado,24.50,pendiente
+2024-04-16,Ana Ruiz,Alemania,Lampara,25.50,pendiente
+2024-05-17,Marta Diaz,Argentina,Monitor,26.50,pendiente
+2024-06-18,Pedro Navas,Francia,Cable,27.50,enviado
+2024-07-19,Ana Ruiz,Portugal,Cable,28.50,pendiente
+2024-08-20,Elena Costa,Colombia,Monitor,29.50,pendiente
+2024-09-21,Luis Ortega,España,Teclado,30.50,pagado
+2024-10-22,Pedro Navas,Italia,Teclado,31.50,pagado
+2024-11-23,Ana Ruiz,Estados Unidos,Monitor,32.50,pendiente
+2024-12-24,Marta Diaz,Italia,Silla,33.50,enviado
+2024-01-25,Elena Costa,España,Cable,34.50,enviado
+2024-02-26,Marta Diaz,Argentina,Cable,35.50,enviado
+2024-03-27,Ana Ruiz,España,Lampara,36.50,pendiente
+2024-04-01,Ana Ruiz,Colombia,Teclado,37.50,pagado
+2024-05-02,Elena Costa,Francia,Lampara,38.50,pendiente
+2024-06-03,Ana Ruiz,Estados Unidos,Lampara,39.50,pendiente
+2024-07-04,Elena Costa,España,Teclado,40.50,enviado
+2024-08-05,Pedro Navas,Chile,Monitor,41.50,enviado
+2024-09-06,Marta Diaz,Francia,Silla,42.50,enviado
+2024-10-07,Ana Ruiz,México,Silla,43.50,enviado
+2024-11-08,Ana Ruiz,Italia,Teclado,44.50,enviado
+2024-12-09,Pedro Navas,Italia,Silla,45.50,pagado
+2024-01-10,Ana Ruiz,Colombia,Monitor,46.50,pendiente
+2024-02-11,Luis Ortega,Portugal,Lampara,47.50,pagado
+2024-03-12,Elena Costa,Argentina,Silla,48.50,enviado
+2024-04-13,Marta Diaz,Chile,Teclado,49.50,pendiente
+2024-05-14,Pedro Navas,México,Teclado,50.50,enviado
+2024-06-15,Marta Diaz,España,Lampara,51.50,enviado
+2024-07-16,Luis Ortega,Portugal,Teclado,52.50,pagado
+2024-08-17,Luis Ortega,Portugal,Teclado,53.50,pendiente
+2024-09-18,Elena Costa,Argentina,Teclado,54.50,pagado
+2024-10-19,Elena Costa,Argentina,Cable,55.50,pendiente
+2024-11-20,Luis Ortega,Italia,Monitor,56.50,pendiente
+2024-12-21,Elena Costa,Alemania,Monitor,57.50,pendiente
+2024-01-22,Pedro Navas,Argentina,Silla,58.50,pagado
+2024-02-23,Marta Diaz,México,Monitor,59.50,pagado
+2024-03-24,Ana Ruiz,Chile,Silla,60.50,enviado
+2024-04-25,Marta Diaz,Italia,Silla,61.50,pendiente
+2024-05-26,Ana Ruiz,Argentina,Monitor,62.50,enviado
+2024-06-27,Elena Costa,España,Monitor,63.50,pagado
+2024-07-01,Luis Ortega,Portugal,Lampara,64.50,pagado
+2024-08-02,Ana Ruiz,Portugal,Cable,65.50,pendiente
+2024-09-03,Marta Diaz,Italia,Lampara,66.50,enviado
+2024-10-04,Marta Diaz,Francia,Monitor,67.50,pendiente
+2024-11-05,Luis Ortega,Italia,Cable,68.50,pendiente
+2024-12-06,Pedro Navas,España,Silla,69.50,pagado
+2024-01-07,Ana Ruiz,Portugal,Lampara,70.50,pendiente
+2024-02-08,Luis Ortega,Argentina,Silla,71.50,pendiente
+2024-03-09,Pedro Navas,Argentina,Monitor,72.50,pendiente
+2024-04-10,Ana Ruiz,México,Lampara,73.50,pendiente
+2024-05-11,Ana Ruiz,Chile,Cable,74.50,pendiente
+2024-06-12,Elena Costa,España,Teclado,75.50,enviado
+2024-07-13,Luis Ortega,Estados Unidos,Monitor,76.50,enviado
+2024-08-14,Ana Ruiz,Italia,Lampara,77.50,pendiente
+2024-09-15,Marta Diaz,Colombia,Silla,78.50,pendiente
+2024-10-16,Marta Diaz,Argentina,Teclado,79.50,pendiente
+2024-11-17,Pedro Navas,Francia,Teclado,80.50,enviado
+2024-12-18,Luis Ortega,México,Monitor,81.50,pendiente
+2024-01-19,Marta Diaz,México,Cable,82.50,pendiente
+2024-02-20,Marta Diaz,Colombia,Lampara,83.50,pagado
+2024-03-21,Pedro Navas,Colombia,Cable,84.50,enviado
+2024-04-22,Ana Ruiz,Alemania,Cable,85.50,pagado
+2024-05-23,Ana Ruiz,Portugal,Cable,86.50,pendiente
+2024-06-24,Pedro Navas,Argentina,Silla,87.50,enviado
+2024-07-25,Luis Ortega,Argentina,Silla,88.50,enviado
+2024-08-26,Pedro Navas,Argentina,Monitor,89.50,pagado
+2024-09-27,Marta Diaz,Estados Unidos,Cable,90.50,enviado
+2024-10-01,Pedro Navas,Francia,Lampara,91.50,pendiente
+2024-11-02,Ana Ruiz,México,Teclado,92.50,pagado
+2024-12-03,Marta Diaz,España,Lampara,93.50,pagado
+2024-01-04,Ana Ruiz,Alemania,Silla,94.50,pendiente
+2024-02-05,Luis Ortega,México,Cable,95.50,enviado
+2024-03-06,Marta Diaz,España,Teclado,96.50,pendiente
+2024-04-07,Elena Costa,Alemania,Teclado,97.50,pagado
+2024-05-08,Ana Ruiz,Colombia,Teclado,98.50,enviado
+2024-06-09,Ana Ruiz,España,Silla,99.50,pagado
+2024-07-10,Pedro Navas,Argentina,Monitor,10.50,enviado
+2024-08-11,Luis Ortega,Argentina,Teclado,11.50,pagado
+2024-09-12,Ana Ruiz,México,Cable,12.50,pagado
+2024-10-13,Ana Ruiz,México,Cable,13.50,pendiente
+2024-11-14,Ana Ruiz,Alemania,Teclado,14.50,pendiente
+2024-12-15,Pedro Navas,Francia,Silla,15.50,pagado
+2024-01-16,Pedro Navas,Chile,Teclado,16.50,enviado
+2024-02-17,Marta Diaz,Argentina,Monitor,17.50,enviado
+2024-03-18,Marta Diaz,Argentina,Lampara,18.50,pagado
+2024-04-19,Elena Costa,Francia,Monitor,19.50,pagado
+2024-05-20,Luis Ortega,Alemania,Teclado,20.50,pagado
+2024-06-21,Pedro Navas,Estados Unidos,Silla,21.50,pagado
+2024-07-22,Marta Diaz,Portugal,Silla,22.50,pendiente
+2024-08-23,Pedro Navas,Chile,Silla,23.50,enviado
+2024-09-24,Ana Ruiz,Argentina,Silla,24.50,enviado
+2024-10-25,Pedro Navas,Alemania,Silla,25.50,pagado
+2024-11-26,Elena Costa,México,Monitor,26.50,pendiente
+2024-12-27,Luis Ortega,Estados Unidos,Lampara,27.50,enviado
+2024-01-01,Elena Costa,Chile,Silla,28.50,pendiente
+2024-02-02,Elena Costa,Argentina,Teclado,29.50,pagado
+2024-03-03,Luis Ortega,México,Lampara,30.50,pendiente
+2024-04-04,Luis Ortega,Colombia,Lampara,31.50,pagado
+2024-05-05,Marta Diaz,Chile,Lampara,32.50,pagado
+2024-06-06,Ana Ruiz,Argentina,Teclado,33.50,pendiente
+2024-07-07,Luis Ortega,Estados Unidos,Teclado,34.50,pendiente
+2024-08-08,Luis Ortega,Chile,Cable,35.50,pagado
+2024-09-09,Elena Costa,España,Silla,36.50,enviado
+2024-10-10,Marta Diaz,España,Monitor,37.50,pendiente
+2024-11-11,Ana Ruiz,Portugal,Cable,38.50,enviado
+2024-12-12,Luis Ortega,Italia,Lampara,39.50,pagado
+2024-01-13,Ana Ruiz,Argentina,Cable,40.50,pendiente
+2024-02-14,Ana Ruiz,Colombia,Teclado,41.50,enviado
+2024-03-15,Elena Costa,Estados Unidos,Lampara,42.50,enviado
+2024-04-16,Elena Costa,Portugal,Silla,43.50,enviado
+2024-05-17,Elena Costa,Estados Unidos,Teclado,44.50,enviado
+2024-06-18,Pedro Navas,Francia,Cable,45.50,pendiente
+2024-07-19,Elena Costa,Francia,Cable,46.50,pagado
+2024-08-20,Marta Diaz,Francia,Lampara,47.50,enviado
+2024-09-21,Luis Ortega,Argentina,Silla,48.50,pendiente
+2024-10-22,Pedro Navas,Argentina,Teclado,49.50,enviado
+2024-11-23,Luis Ortega,Argentina,Silla,50.50,enviado
+2024-12-24,Elena Costa,México,Lampara,51.50,pendiente
+2024-01-25,Marta Diaz,México,Teclado,52.50,pendiente
+2024-02-26,Luis Ortega,Portugal,Silla,53.50,pagado
+2024-03-27,Luis Ortega,España,Teclado,54.50,pendiente
+2024-04-01,Elena Costa,Portugal,Cable,55.50,pagado
+2024-05-02,Pedro Navas,Francia,Monitor,56.50,enviado
+2024-06-03,Marta Diaz,Francia,Monitor,57.50,pendiente
+2024-07-04,Pedro Navas,España,Lampara,58.50,enviado
+2024-08-05,Pedro Navas,Estados Unidos,Cable,59.50,pagado
+2024-09-06,Marta Diaz,Chile,Teclado,60.50,pendiente
+2024-10-07,Marta Diaz,Italia,Lampara,61.50,pendiente
+2024-11-08,Luis Ortega,Italia,Monitor,62.50,pagado
+2024-12-09,Elena Costa,Colombia,Lampara,63.50,pagado
+2024-01-10,Ana Ruiz,Italia,Lampara,64.50,enviado
+2024-02-11,Ana Ruiz,Argentina,Monitor,65.50,pendiente
+2024-03-12,Marta Diaz,Francia,Lampara,66.50,pendiente
+2024-04-13,Elena Costa,España,Lampara,67.50,pendiente
+2024-05-14,Marta Diaz,Italia,Lampara,68.50,pendiente
+2024-06-15,Ana Ruiz,España,Lampara,69.50,enviado
+2024-07-16,Elena Costa,Francia,Teclado,70.50,enviado
+2024-08-17,Elena Costa,Chile,Lampara,71.50,pagado
+2024-09-18,Ana Ruiz,Italia,Silla,72.50,pendiente
+2024-10-19,Marta Diaz,Colombia,Silla,73.50,pagado
+2024-11-20,Pedro Navas,Alemania,Monitor,74.50,pagado
+2024-12-21,Marta Diaz,España,Silla,75.50,enviado
+2024-01-22,Marta Diaz,España,Cable,76.50,enviado
+2024-02-23,Luis Ortega,España,Monitor,77.50,enviado
+2024-03-24,Pedro Navas,Portugal,Monitor,78.50,pagado
+2024-04-25,Luis Ortega,Argentina,Monitor,79.50,enviado
+2024-05-26,Ana Ruiz,Argentina,Teclado,80.50,pagado
+2024-06-27,Marta Diaz,Alemania,Teclado,81.50,enviado
+2024-07-01,Elena Costa,Colombia,Cable,82.50,enviado
+2024-08-02,Ana Ruiz,España,Teclado,83.50,enviado
+2024-09-03,Luis Ortega,Portugal,Monitor,84.50,pendiente
+2024-10-04,Pedro Navas,México,Monitor,85.50,pagado
+2024-11-05,Marta Diaz,Italia,Silla,86.50,pagado
+2024-12-06,Pedro Navas,Francia,Teclado,87.50,enviado
+2024-01-07,Luis Ortega,Estados Unidos,Lampara,88.50,enviado
+2024-02-08,Ana Ruiz,Chile,Monitor,89.50,pendiente
+2024-03-09,Marta Diaz,Alemania,Lampara,90.50,pagado
+2024-04-10,Elena Costa,Estados Unidos,Cable,91.50,pendiente
+2024-05-11,Marta Diaz,Italia,Cable,92.50,enviado
+2024-06-12,Marta Diaz,Italia,Teclado,93.50,enviado
+2024-07-13,Ana Ruiz,España,Silla,94.50,pagado
+2024-08-14,Marta Diaz,Francia,Monitor,95.50,pagado
+2024-09-15,Elena Costa,Estados Unidos,Silla,96.50,enviado
+2024-10-16,Pedro Navas,Francia,Monitor,97.50,pagado
+2024-11-17,Elena Costa,Colombia,Teclado,98.50,pagado
+2024-12-18,Pedro Navas,Chile,Silla,99.50,enviado
+2024-01-19,Luis Ortega,Colombia,Cable,10.50,pendiente
+2024-02-20,Marta Diaz,Alemania,Cable,11.50,pagado
+2024-03-21,Luis Ortega,Italia,Lampara,12.50,enviado
+2024-04-22,Elena Costa,Italia,Lampara,13.50,pendiente
+2024-05-23,Pedro Navas,Francia,Lampara,14.50,enviado
+2024-06-24,Pedro Navas,Alemania,Lampara,15.50,enviado
+2024-07-25,Pedro Navas,Colombia,Silla,16.50,enviado
+2024-08-26,Marta Diaz,Portugal,Lampara,17.50,pagado
+2024-09-27,Ana Ruiz,Argentina,Cable,18.50,pendiente
+2024-10-01,Ana Ruiz,Francia,Monitor,19.50,pagado
+2024-11-02,Elena Costa,Alemania,Monitor,20.50,pendiente
+2024-12-03,Pedro Navas,Italia,Lampara,21.50,pagado
+2024-01-04,Ana Ruiz,Alemania,Cable,22.50,enviado
+2024-02-05,Marta Diaz,Portugal,Cable,23.50,pendiente
+2024-03-06,Marta Diaz,Portugal,Teclado,24.50,pendiente
+2024-04-07,Ana Ruiz,Italia,Lampara,25.50,enviado
+2024-05-08,Pedro Navas,Chile,Lampara,26.50,enviado
+2024-06-09,Luis Ortega,Colombia,Teclado,27.50,pagado
+2024-07-10,Luis Ortega,Alemania,Lampara,28.50,pagado
+2024-08-11,Luis Ortega,España,Cable,29.50,pagado
+2024-09-12,Luis Ortega,Chile,Teclado,30.50,pendiente
+2024-10-13,Luis Ortega,Italia,Monitor,31.50,pendiente
+2024-11-14,Pedro Navas,México,Cable,32.50,pagado
+2024-12-15,Ana Ruiz,Italia,Cable,33.50,pagado
+2024-01-16,Pedro Navas,Colombia,Cable,34.50,enviado
+2024-02-17,Pedro Navas,Colombia,Cable,35.50,enviado
+2024-03-18,Luis Ortega,Argentina,Silla,36.50,pendiente
+2024-04-19,Pedro Navas,Portugal,Monitor,37.50,pendiente
+2024-05-20,Ana Ruiz,Alemania,Cable,38.50,pagado
+2024-06-21,Elena Costa,Estados Unidos,Cable,39.50,pagado
+2024-07-22,Luis Ortega,Colombia,Lampara,40.50,pagado
+2024-08-23,Luis Ortega,Alemania,Lampara,41.50,pendiente
+2024-09-24,Elena Costa,Argentina,Cable,42.50,pagado
+2024-10-25,Elena Costa,Chile,Teclado,43.50,pendiente
+2024-11-26,Marta Diaz,Alemania,Monitor,44.50,pagado
+2024-12-27,Pedro Navas,Colombia,Teclado,45.50,pendiente
+2024-01-01,Ana Ruiz,España,Teclado,46.50,pendiente
+2024-02-02,Ana Ruiz,España,Cable,47.50,enviado
+2024-03-03,Luis Ortega,Colombia,Silla,48.50,pagado
+2024-04-04,Ana Ruiz,México,Silla,49.50,enviado
+2024-05-05,Elena Costa,Argentina,Silla,50.50,pagado
+2024-06-06,Pedro Navas,Argentina,Cable,51.50,enviado
+2024-07-07,Elena Costa,Portugal,Lampara,52.50,pagado
+2024-08-08,Luis Ortega,España,Cable,53.50,pagado
+2024-09-09,Marta Diaz,Portugal,Teclado,54.50,pendiente
+2024-10-10,Ana Ruiz,Estados Unidos,Monitor,55.50,pendiente
+2024-11-11,Marta Diaz,Italia,Silla,56.50,pendiente
+2024-12-12,Elena Costa,Portugal,Monitor,57.50,pendiente
+2024-01-13,Marta Diaz,Colombia,Cable,58.50,enviado
+2024-02-14,Marta Diaz,México,Monitor,59.50,pagado
+2024-03-15,Ana Ruiz,Portugal,Teclado,60.50,pendiente
+2024-04-16,Marta Diaz,España,Lampara,61.50,pendiente
+2024-05-17,Ana Ruiz,Portugal,Silla,62.50,pendiente
+2024-06-18,Elena Costa,Chile,Monitor,63.50,pagado
+2024-07-19,Pedro Navas,Argentina,Teclado,64.50,pendiente
+2024-08-20,Ana Ruiz,Italia,Cable,65.50,enviado
+2024-09-21,Ana Ruiz,México,Teclado,66.50,pagado
+2024-10-22,Pedro Navas,Chile,Silla,67.50,pendiente
+2024-11-23,Elena Costa,Colombia,Cable,68.50,enviado
+2024-12-24,Marta Diaz,Portugal,Silla,69.50,pagado
+2024-01-25,Luis Ortega,Argentina,Lampara,70.50,pendiente
+2024-02-26,Pedro Navas,España,Monitor,71.50,enviado
+2024-03-27,Ana Ruiz,Alemania,Lampara,72.50,pendiente
+2024-04-01,Marta Diaz,Francia,Teclado,73.50,enviado
+2024-05-02,Elena Costa,España,Silla,74.50,pagado
+2024-06-03,Luis Ortega,Colombia,Cable,75.50,pagado
+2024-07-04,Luis Ortega,Argentina,Silla,76.50,enviado
+2024-08-05,Ana Ruiz,España,Cable,77.50,enviado
+2024-09-06,Ana Ruiz,Argentina,Lampara,78.50,enviado
+2024-10-07,Pedro Navas,Chile,Monitor,79.50,pagado
+2024-11-08,Pedro Navas,Alemania,Monitor,80.50,enviado
+2024-12-09,Elena Costa,Portugal,Silla,81.50,enviado
+2024-01-10,Luis Ortega,México,Monitor,82.50,pagado
+2024-02-11,Marta Diaz,Chile,Silla,83.50,pendiente
+2024-03-12,Pedro Navas,Colombia,Monitor,84.50,enviado
+2024-04-13,Luis Ortega,España,Monitor,85.50,pendiente
+2024-05-14,Luis Ortega,Francia,Cable,86.50,pendiente
+2024-06-15,Ana Ruiz,Chile,Lampara,87.50,enviado
+2024-07-16,Marta Diaz,Alemania,Teclado,88.50,pagado
+2024-08-17,Marta Diaz,Argentina,Cable,89.50,pendiente
+2024-09-18,Ana Ruiz,España,Cable,90.50,pendiente
+2024-10-19,Ana Ruiz,Colombia,Cable,91.50,enviado
+2024-11-20,Elena Costa,España,Silla,92.50,enviado
+2024-12-21,Marta Diaz,Chile,Silla,93.50,enviado
+2024-01-22,Ana Ruiz,Chile,Cable,94.50,pagado
+2024-02-23,Elena Costa,Estados Unidos,Teclado,95.50,pendiente
+2024-03-24,Marta Diaz,México,Silla,96.50,pendiente
+2024-04-25,Ana Ruiz,Estados Unidos,Teclado,97.50,enviado
+2024-05-26,Ana Ruiz,Chile,Teclado,98.50,pendiente
+2024-06-27,Pedro Navas,Italia,Cable,99.50,pagado
+2024-07-01,Ana Ruiz,Italia,Lampara,10.50,enviado
+2024-08-02,Marta Diaz,Chile,Cable,11.50,enviado
+2024-09-03,Elena Costa,España,Lampara,12.50,pagado
+2024-10-04,Marta Diaz,Portugal,Lampara,13.50,pendiente
+2024-11-05,Pedro Navas,Colombia,Teclado,14.50,enviado
+2024-12-06,Ana Ruiz,Argentina,Silla,15.50,pendiente
+2024-01-07,Pedro Navas,Portugal,Cable,16.50,pendiente
+2024-02-08,Luis Ortega,Portugal,Monitor,17.50,enviado
+2024-03-09,Ana Ruiz,Portugal,Teclado,18.50,enviado
+2024-04-10,Ana Ruiz,Argentina,Lampara,19.50,pagado
+2024-05-11,Ana Ruiz,Italia,Lampara,20.50,pagado
+2024-06-12,Pedro Navas,Chile,Lampara,21.50,pendiente
+2024-07-13,Luis Ortega,Chile,Monitor,22.50,enviado
+2024-08-14,Pedro Navas,Alemania,Cable,23.50,pagado
+2024-09-15,Marta Diaz,Argentina,Teclado,24.50,enviado
+2024-10-16,Pedro Navas,Italia,Silla,25.50,pendiente
+2024-11-17,Elena Costa,México,Teclado,26.50,pagado
+2024-12-18,Elena Costa,Francia,Teclado,27.50,enviado
+2024-01-19,Ana Ruiz,Chile,Lampara,28.50,pagado
+2024-02-20,Marta Diaz,Argentina,Cable,29.50,pagado
+2024-03-21,Pedro Navas,Colombia,Monitor,30.50,pagado
+2024-04-22,Pedro Navas,Argentina,Silla,31.50,pagado
+2024-05-23,Marta Diaz,Alemania,Teclado,32.50,pagado
+2024-06-24,Luis Ortega,Alemania,Lampara,33.50,pagado
+2024-07-25,Marta Diaz,Argentina,Cable,34.50,pagado
+2024-08-26,Marta Diaz,México,Monitor,35.50,pagado
+2024-09-27,Marta Diaz,España,Teclado,36.50,enviado
+2024-10-01,Marta Diaz,Francia,Monitor,37.50,enviado
+2024-11-02,Luis Ortega,Colombia,Cable,38.50,pagado
+2024-12-03,Marta Diaz,Francia,Teclado,39.50,pagado
+2024-01-04,Luis Ortega,Francia,Cable,40.50,pagado
+2024-02-05,Pedro Navas,Chile,Silla,41.50,enviado
+2024-03-06,Marta Diaz,México,Cable,42.50,pendiente
+2024-04-07,Elena Costa,Estados Unidos,Teclado,43.50,pendiente
+2024-05-08,Ana Ruiz,España,Monitor,44.50,pendiente
+2024-06-09,Marta Diaz,Alemania,Teclado,45.50,pagado
+2024-07-10,Luis Ortega,Estados Unidos,Teclado,46.50,pendiente
+2024-08-11,Elena Costa,España,Silla,47.50,pagado
+2024-09-12,Marta Diaz,Chile,Teclado,48.50,pendiente
+2024-10-13,Pedro Navas,México,Cable,49.50,enviado
+2024-11-14,Elena Costa,Francia,Monitor,50.50,pendiente
+2024-12-15,Luis Ortega,Francia,Silla,51.50,enviado
+2024-01-16,Marta Diaz,Chile,Lampara,52.50,pagado
+2024-02-17,Marta Diaz,Argentina,Silla,53.50,enviado
+2024-03-18,Ana Ruiz,Alemania,Silla,54.50,enviado
+2024-04-19,Pedro Navas,Argentina,Silla,55.50,pendiente
+2024-05-20,Marta Diaz,Argentina,Cable,56.50,pagado
+2024-06-21,Elena Costa,Chile,Teclado,57.50,pendiente
+2024-07-22,Luis Ortega,Francia,Teclado,58.50,pagado
+2024-08-23,Elena Costa,Chile,Lampara,59.50,pagado
+2024-09-24,Pedro Navas,Argentina,Teclado,60.50,pendiente
+2024-10-25,Marta Diaz,España,Cable,61.50,pagado
+2024-11-26,Elena Costa,México,Cable,62.50,pendiente
+2024-12-27,Ana Ruiz,Francia,Teclado,63.50,enviado
+2024-01-01,Pedro Navas,Colombia,Lampara,64.50,enviado
+2024-02-02,Pedro Navas,Italia,Silla,65.50,enviado
+2024-03-03,Marta Diaz,Colombia,Cable,66.50,enviado
+2024-04-04,Luis Ortega,Alemania,Cable,67.50,pendiente
+2024-05-05,Marta Diaz,Estados Unidos,Teclado,68.50,enviado
+2024-06-06,Elena Costa,España,Teclado,69.50,enviado
+2024-07-07,Marta Diaz,España,Monitor,70.50,pagado
+2024-08-08,Luis Ortega,Chile,Lampara,71.50,enviado
+2024-09-09,Pedro Navas,Argentina,Lampara,72.50,pagado
+2024-10-10,Elena Costa,Chile,Monitor,73.50,pendiente
+2024-11-11,Luis Ortega,México,Silla,74.50,pendiente
+2024-12-12,Elena Costa,España,Lampara,75.50,enviado
+2024-01-13,Luis Ortega,México,Lampara,76.50,pagado
+2024-02-14,Elena Costa,Estados Unidos,Teclado,77.50,enviado
+2024-03-15,Pedro Navas,Italia,Cable,78.50,enviado
+2024-04-16,Luis Ortega,Estados Unidos,Monitor,79.50,enviado
+2024-05-17,Pedro Navas,México,Cable,80.50,pagado
+2024-06-18,Ana Ruiz,Colombia,Cable,81.50,pagado
+2024-07-19,Ana Ruiz,Estados Unidos,Cable,82.50,pendiente
+2024-08-20,Luis Ortega,Portugal,Teclado,83.50,enviado
+2024-09-21,Luis Ortega,Colombia,Lampara,84.50,pagado
+2024-10-22,Ana Ruiz,Italia,Silla,85.50,pagado
+2024-11-23,Marta Diaz,Francia,Silla,86.50,pagado
+2024-12-24,Marta Diaz,Francia,Silla,87.50,pagado
+2024-01-25,Ana Ruiz,Argentina,Teclado,88.50,pendiente
+2024-02-26,Ana Ruiz,España,Cable,89.50,pagado
+2024-03-27,Elena Costa,Estados Unidos,Teclado,90.50,enviado
+2024-04-01,Marta Diaz,Portugal,Monitor,91.50,pendiente
+2024-05-02,Pedro Navas,Alemania,Cable,92.50,enviado
+2024-06-03,Marta Diaz,España,Cable,93.50,pendiente
+2024-07-04,Pedro Navas,Portugal,Cable,94.50,pagado
+2024-08-05,Elena Costa,Colombia,Cable,95.50,enviado
+2024-09-06,Ana Ruiz,Chile,Monitor,96.50,enviado
+2024-10-07,Luis Ortega,Portugal,Monitor,97.50,pendiente
+2024-11-08,Marta Diaz,Italia,Silla,98.50,pendiente
+2024-12-09,Luis Ortega,Colombia,Cable,99.50,enviado
+2024-01-10,Marta Diaz,Portugal,Cable,10.50,pendiente
+2024-02-11,Ana Ruiz,Chile,Lampara,11.50,enviado
+2024-03-12,Elena Costa,Argentina,Monitor,12.50,pagado
+2024-04-13,Marta Diaz,Portugal,Monitor,13.50,enviado
+2024-05-14,Elena Costa,Portugal,Teclado,14.50,pagado
+2024-06-15,Luis Ortega,Colombia,Lampara,15.50,pagado
+2024-07-16,Ana Ruiz,Argentina,Teclado,16.50,enviado
+2024-08-17,Marta Diaz,Chile,Monitor,17.50,pagado
+2024-09-18,Pedro Navas,Estados Unidos,Monitor,18.50,pagado
+2024-10-19,Elena Costa,España,Cable,19.50,pagado
+2024-11-20,Pedro Navas,Colombia,Monitor,20.50,enviado
+2024-12-21,Marta Diaz,España,Cable,21.50,enviado
+2024-01-22,Luis Ortega,Portugal,Teclado,22.50,pagado
+2024-02-23,Marta Diaz,Italia,Cable,23.50,enviado
+2024-03-24,Luis Ortega,España,Teclado,24.50,pendiente
+2024-04-25,Elena Costa,Italia,Monitor,25.50,pagado
+2024-05-26,Ana Ruiz,Colombia,Teclado,26.50,pagado
+2024-06-27,Elena Costa,Argentina,Lampara,27.50,pagado
+2024-07-01,Luis Ortega,Francia,Teclado,28.50,enviado
+2024-08-02,Elena Costa,Francia,Silla,29.50,pendiente
+2024-09-03,Marta Diaz,Estados Unidos,Lampara,30.50,pendiente
+2024-10-04,Marta Diaz,México,Monitor,31.50,enviado
+2024-11-05,Ana Ruiz,Colombia,Silla,32.50,pagado
+2024-12-06,Luis Ortega,México,Lampara,33.50,enviado
+2024-01-07,Pedro Navas,Alemania,Monitor,34.50,pendiente
+2024-02-08,Pedro Navas,Italia,Monitor,35.50,enviado
+2024-03-09,Elena Costa,Colombia,Monitor,36.50,enviado
+2024-04-10,Luis Ortega,Colombia,Lampara,37.50,enviado
+2024-05-11,Elena Costa,Estados Unidos,Silla,38.50,enviado
+2024-06-12,Ana Ruiz,Italia,Cable,39.50,enviado
+2024-07-13,Ana Ruiz,Portugal,Silla,40.50,pagado
+2024-08-14,Ana Ruiz,España,Cable,41.50,enviado
+2024-09-15,Luis Ortega,Francia,Monitor,42.50,pendiente
+2024-10-16,Ana Ruiz,Estados Unidos,Teclado,43.50,pagado
+2024-11-17,Luis Ortega,Alemania,Monitor,44.50,pagado
+2024-12-18,Elena Costa,Alemania,Silla,45.50,enviado
+2024-01-19,Ana Ruiz,España,Lampara,46.50,enviado
+2024-02-20,Luis Ortega,Argentina,Silla,47.50,pendiente
+2024-03-21,Ana Ruiz,Francia,Lampara,48.50,enviado
+2024-04-22,Marta Diaz,España,Cable,49.50,pagado
+2024-05-23,Ana Ruiz,Francia,Cable,50.50,pendiente
+2024-06-24,Pedro Navas,Alemania,Lampara,51.50,enviado
+2024-07-25,Pedro Navas,Colombia,Lampara,52.50,pagado
+2024-08-26,Pedro Navas,Estados Unidos,Silla,53.50,enviado
+2024-09-27,Elena Costa,Colombia,Silla,54.50,pendiente
+2024-10-01,Pedro Navas,Colombia,Cable,55.50,enviado
+2024-11-02,Ana Ruiz,Portugal,Monitor,56.50,enviado
+2024-12-03,Marta Diaz,México,Monitor,57.50,enviado
+2024-01-04,Marta Diaz,Argentina,Silla,58.50,enviado
+2024-02-05,Marta Diaz,Argentina,Lampara,59.50,pagado
+2024-03-06,Elena Costa,Francia,Monitor,60.50,enviado
+2024-04-07,Elena Costa,Portugal,Silla,61.50,enviado
+2024-05-08,Elena Costa,Italia,Teclado,62.50,pagado
+2024-06-09,Luis Ortega,Portugal,Monitor,63.50,pagado
+2024-07-10,Ana Ruiz,México,Teclado,64.50,pagado
+2024-08-11,Pedro Navas,México,Lampara,65.50,pendiente
+2024-09-12,Pedro Navas,Portugal,Cable,66.50,pendiente
+2024-10-13,Ana Ruiz,Portugal,Cable,67.50,pagado
+2024-11-14,Ana Ruiz,Argentina,Silla,68.50,pagado
+2024-12-15,Ana Ruiz,Estados Unidos,Teclado,69.50,enviado
+2024-01-16,Ana Ruiz,Alemania,Monitor,70.50,pendiente
+2024-02-17,Marta Diaz,España,Lampara,71.50,pendiente
+2024-03-18,Marta Diaz,Italia,Monitor,72.50,pendiente
+2024-04-19,Ana Ruiz,México,Teclado,73.50,pagado
+2024-05-20,Luis Ortega,Argentina,Monitor,74.50,pendiente
+2024-06-21,Ana Ruiz,Estados Unidos,Silla,75.50,enviado
+2024-07-22,Marta Diaz,Italia,Teclado,76.50,pendiente
+2024-08-23,Marta Diaz,Portugal,Teclado,77.50,pagado
+2024-09-24,Luis Ortega,Chile,Silla,78.50,enviado
+2024-10-25,Elena Costa,Alemania,Cable,79.50,pendiente
+2024-11-26,Marta Diaz,Francia,Silla,80.50,pendiente
+2024-12-27,Ana Ruiz,Colombia,Silla,81.50,pagado
+2024-01-01,Luis Ortega,Italia,Monitor,82.50,pagado
+2024-02-02,Luis Ortega,España,Monitor,83.50,pendiente
+2024-03-03,Pedro Navas,Chile,Teclado,84.50,pendiente
+2024-04-04,Pedro Navas,Estados Unidos,Silla,85.50,pendiente
+2024-05-05,Pedro Navas,Portugal,Teclado,86.50,pagado
+2024-06-06,Marta Diaz,Estados Unidos,Monitor,87.50,pagado
+2024-07-07,Elena Costa,Chile,Lampara,88.50,enviado
+2024-08-08,Luis Ortega,Estados Unidos,Monitor,89.50,pendiente
+2024-09-09,Ana Ruiz,Portugal,Silla,90.50,pagado
+2024-10-10,Luis Ortega,Francia,Silla,91.50,enviado
+2024-11-11,Marta Diaz,Alemania,Teclado,92.50,enviado
+2024-12-12,Elena Costa,Chile,Silla,93.50,pendiente
+2024-01-13,Elena Costa,Estados Unidos,Monitor,94.50,enviado
+2024-02-14,Luis Ortega,Estados Unidos,Silla,95.50,enviado
+2024-03-15,Luis Ortega,Estados Unidos,Cable,96.50,enviado
+2024-04-16,Pedro Navas,Italia,Lampara,97.50,enviado
+2024-05-17,Marta Diaz,Portugal,Teclado,98.50,pagado
+2024-06-18,Luis Ortega,Italia,Cable,99.50,enviado
+2024-07-19,Pedro Navas,Colombia,Lampara,10.50,pagado
+2024-08-20,Ana Ruiz,Chile,Teclado,11.50,pendiente
+2024-09-21,Ana Ruiz,Argentina,Teclado,12.50,pendiente
+2024-10-22,Ana Ruiz,Alemania,Teclado,13.50,pendiente
+2024-11-23,Pedro Navas,Francia,Cable,14.50,pagado
+2024-12-24,Marta Diaz,México,Teclado,15.50,pendiente
+2024-01-25,Pedro Navas,Portugal,Silla,16.50,enviado
+2024-02-26,Ana Ruiz,España,Monitor,17.50,enviado
+2024-03-27,Ana Ruiz,Argentina,Silla,18.50,pagado
+2024-04-01,Elena Costa,Francia,Teclado,19.50,pendiente
+2024-05-02,Marta Diaz,Colombia,Monitor,20.50,pagado
+2024-06-03,Marta Diaz,Chile,Lampara,21.50,enviado
+2024-07-04,Elena Costa,Colombia,Teclado,22.50,enviado
+2024-08-05,Luis Ortega,Argentina,Cable,23.50,pagado
+2024-09-06,Elena Costa,Alemania,Silla,24.50,pendiente
+2024-10-07,Ana Ruiz,México,Silla,25.50,pendiente
+2024-11-08,Ana Ruiz,Portugal,Cable,26.50,pendiente
+2024-12-09,Elena Costa,España,Monitor,27.50,enviado
+2024-01-10,Luis Ortega,Colombia,Lampara,28.50,pagado
+2024-02-11,Ana Ruiz,Alemania,Monitor,29.50,pagado
+2024-03-12,Ana Ruiz,México,Lampara,30.50,pendiente
+2024-04-13,Ana Ruiz,Portugal,Silla,31.50,pagado
+2024-05-14,Luis Ortega,Argentina,Teclado,32.50,pagado
+2024-06-15,Marta Diaz,España,Silla,33.50,enviado
+2024-07-16,Ana Ruiz,Estados Unidos,Lampara,34.50,enviado
+2024-08-17,Marta Diaz,Portugal,Lampara,35.50,pendiente
+2024-09-18,Marta Diaz,Estados Unidos,Teclado,36.50,pagado
+2024-10-19,Pedro Navas,Estados Unidos,Silla,37.50,pendiente
+2024-11-20,Luis Ortega,Alemania,Silla,38.50,pendiente
+2024-12-21,Elena Costa,México,Teclado,39.50,pendiente
+2024-01-22,Pedro Navas,México,Cable,40.50,pagado
+2024-02-23,Pedro Navas,México,Teclado,41.50,pendiente
+2024-03-24,Pedro Navas,Argentina,Teclado,42.50,enviado
+2024-04-25,Ana Ruiz,Argentina,Silla,43.50,pendiente
+2024-05-26,Ana Ruiz,Italia,Silla,44.50,pendiente
+2024-06-27,Luis Ortega,Portugal,Monitor,45.50,pagado
+2024-07-01,Elena Costa,Estados Unidos,Lampara,46.50,enviado
+2024-08-02,Pedro Navas,Francia,Cable,47.50,pendiente
+2024-09-03,Luis Ortega,Alemania,Cable,48.50,pendiente
+2024-10-04,Elena Costa,Estados Unidos,Lampara,49.50,pendiente
+2024-11-05,Pedro Navas,Portugal,Silla,50.50,pagado
+2024-12-06,Elena Costa,Alemania,Teclado,51.50,pendiente
+2024-01-07,Ana Ruiz,Portugal,Cable,52.50,pendiente
+2024-02-08,Luis Ortega,Argentina,Monitor,53.50,pendiente
+2024-03-09,Elena Costa,Italia,Lampara,54.50,pagado
+2024-04-10,Luis Ortega,Estados Unidos,Cable,55.50,enviado
+2024-05-11,Marta Diaz,México,Cable,56.50,pagado
+2024-06-12,Elena Costa,Alemania,Lampara,57.50,pagado
+2024-07-13,Luis Ortega,Italia,Lampara,58.50,pendiente
+2024-08-14,Elena Costa,Italia,Cable,59.50,pendiente
+2024-09-15,Ana Ruiz,Chile,Teclado,60.50,pendiente
+2024-10-16,Elena Costa,Estados Unidos,Silla,61.50,pendiente
+2024-11-17,Elena Costa,Argentina,Teclado,62.50,pendiente
+2024-12-18,Pedro Navas,Alemania,Monitor,63.50,pagado
+2024-01-19,Ana Ruiz,Italia,Monitor,64.50,pagado
+2024-02-20,Marta Diaz,Colombia,Silla,65.50,enviado
+2024-03-21,Ana Ruiz,Alemania,Teclado,66.50,pagado
+2024-04-22,Ana Ruiz,Colombia,Cable,67.50,enviado
+2024-05-23,Ana Ruiz,Argentina,Cable,68.50,pagado
+2024-06-24,Ana Ruiz,México,Teclado,69.50,pagado
+2024-07-25,Ana Ruiz,Francia,Lampara,70.50,pagado
+2024-08-26,Pedro Navas,Estados Unidos,Monitor,71.50,pendiente
+2024-09-27,Ana Ruiz,Portugal,Cable,72.50,pendiente
+2024-10-01,Pedro Navas,Chile,Teclado,73.50,enviado
+2024-11-02,Elena Costa,Italia,Teclado,74.50,enviado
+2024-12-03,Elena Costa,Francia,Teclado,75.50,pendiente
+2024-01-04,Marta Diaz,Italia,Teclado,76.50,pendiente
+2024-02-05,Elena Costa,Colombia,Lampara,77.50,pendiente
+2024-03-06,Elena Costa,Argentina,Cable,78.50,enviado
+2024-04-07,Luis Ortega,Francia,Cable,79.50,enviado
+2024-05-08,Ana Ruiz,Italia,Cable,80.50,enviado
+2024-06-09,Elena Costa,Italia,Lampara,81.50,pendiente
+2024-07-10,Marta Diaz,Argentina,Teclado,82.50,enviado
+2024-08-11,Ana Ruiz,Argentina,Silla,83.50,pendiente
+2024-09-12,Ana Ruiz,Portugal,Teclado,84.50,enviado
+2024-10-13,Elena Costa,Estados Unidos,Teclado,85.50,pagado
+2024-11-14,Pedro Navas,Italia,Monitor,86.50,enviado
+2024-12-15,Ana Ruiz,Argentina,Cable,87.50,pagado
+2024-01-16,Elena Costa,Colombia,Monitor,88.50,pendiente
+2024-02-17,Marta Diaz,Francia,Lampara,89.50,enviado
+2024-03-18,Ana Ruiz,Portugal,Lampara,90.50,pendiente
+2024-04-19,Marta Diaz,España,Lampara,91.50,pendiente
+2024-05-20,Ana Ruiz,Alemania,Monitor,92.50,pagado
+2024-06-21,Pedro Navas,Argentina,Cable,93.50,enviado
+2024-07-22,Elena Costa,Chile,Cable,94.50,pendiente
+2024-08-23,Luis Ortega,España,Silla,95.50,pendiente
+2024-09-24,Pedro Navas,España,Silla,96.50,enviado
+2024-10-25,Marta Diaz,Colombia,Monitor,97.50,pagado
+2024-11-26,Luis Ortega,Francia,Teclado,98.50,enviado
+2024-12-27,Elena Costa,Chile,Lampara,99.50,enviado
+2024-01-01,Ana Ruiz,Argentina,Monitor,10.50,pendiente
+2024-02-02,Marta Diaz,México,Cable,11.50,pagado
+2024-03-03,Ana Ruiz,Portugal,Lampara,12.50,pendiente
+2024-04-04,Luis Ortega,España,Cable,13.50,pagado
+2024-05-05,Marta Diaz,Colombia,Silla,14.50,pagado
+2024-06-06,Ana Ruiz,México,Silla,15.50,enviado
+2024-07-07,Luis Ortega,Italia,Cable,16.50,pagado
+2024-08-08,Pedro Navas,Argentina,Silla,17.50,enviado
+2024-09-09,Luis Ortega,Estados Unidos,Lampara,18.50,pendiente
+2024-10-10,Pedro Navas,Portugal,Monitor,19.50,enviado
+2024-11-11,Marta Diaz,Portugal,Silla,20.50,enviado
+2024-12-12,Pedro Navas,Alemania,Silla,21.50,pagado
+2024-01-13,Luis Ortega,Italia,Silla,22.50,pendiente
+2024-02-14,Marta Diaz,Estados Unidos,Monitor,23.50,pendiente
+2024-03-15,Pedro Navas,Estados Unidos,Cable,24.50,enviado
+2024-04-16,Elena Costa,Colombia,Silla,25.50,enviado
+2024-05-17,Marta Diaz,Francia,Monitor,26.50,pendiente
+2024-06-18,Pedro Navas,México,Teclado,27.50,pagado
+2024-07-19,Luis Ortega,Chile,Teclado,28.50,pendiente
+2024-08-20,Marta Diaz,Portugal,Silla,29.50,enviado
+2024-09-21,Marta Diaz,Colombia,Silla,30.50,pagado
+2024-10-22,Pedro Navas,España,Monitor,31.50,pendiente
+2024-11-23,Ana Ruiz,Portugal,Silla,32.50,pendiente
+2024-12-24,Marta Diaz,Colombia,Teclado,33.50,pagado
+2024-01-25,Luis Ortega,España,Silla,34.50,pendiente
+2024-02-26,Pedro Navas,Italia,Monitor,35.50,enviado
+2024-03-27,Pedro Navas,Argentina,Cable,36.50,enviado
+2024-04-01,Ana Ruiz,Alemania,Teclado,37.50,pendiente
+2024-05-02,Luis Ortega,Colombia,Lampara,38.50,pendiente
+2024-06-03,Luis Ortega,Colombia,Lampara,39.50,pagado
+2024-07-04,Marta Diaz,Francia,Lampara,40.50,pendiente
+2024-08-05,Elena Costa,Francia,Lampara,41.50,pendiente
+2024-09-06,Ana Ruiz,Colombia,Teclado,42.50,enviado
+2024-10-07,Pedro Navas,Francia,Cable,43.50,enviado
+2024-11-08,Pedro Navas,Argentina,Lampara,44.50,enviado
+2024-12-09,Marta Diaz,Alemania,Silla,45.50,pagado
+2024-01-10,Elena Costa,Colombia,Monitor,46.50,enviado
+2024-02-11,Elena Costa,Portugal,Monitor,47.50,pendiente
+2024-03-12,Ana Ruiz,Alemania,Lampara,48.50,pagado
+2024-04-13,Marta Diaz,Argentina,Lampara,49.50,pendiente
+2024-05-14,Marta Diaz,Chile,Lampara,50.50,pagado
+2024-06-15,Luis Ortega,Colombia,Monitor,51.50,pendiente
+2024-07-16,Ana Ruiz,Colombia,Lampara,52.50,pagado
+2024-08-17,Elena Costa,México,Teclado,53.50,pagado
+2024-09-18,Elena Costa,Estados Unidos,Cable,54.50,enviado
+2024-10-19,Luis Ortega,Francia,Teclado,55.50,pagado
+2024-11-20,Luis Ortega,Alemania,Monitor,56.50,pagado
+2024-12-21,Ana Ruiz,Estados Unidos,Lampara,57.50,pendiente
+2024-01-22,Pedro Navas,México,Cable,58.50,pagado
+2024-02-23,Ana Ruiz,España,Cable,59.50,pagado
+2024-03-24,Luis Ortega,Alemania,Silla,60.50,enviado
+2024-04-25,Luis Ortega,Francia,Silla,61.50,enviado
+2024-05-26,Pedro Navas,Alemania,Monitor,62.50,pendiente
+2024-06-27,Luis Ortega,México,Silla,63.50,enviado
+2024-07-01,Marta Diaz,Portugal,Monitor,64.50,pagado
+2024-08-02,Marta Diaz,Italia,Silla,65.50,pendiente
+2024-09-03,Luis Ortega,Argentina,Silla,66.50,pagado
+2024-10-04,Ana Ruiz,Portugal,Monitor,67.50,pagado
+2024-11-05,Pedro Navas,España,Silla,68.50,pagado
+2024-12-06,Elena Costa,España,Monitor,69.50,enviado
+2024-01-07,Ana Ruiz,Francia,Teclado,70.50,enviado
+2024-02-08,Ana Ruiz,Francia,Cable,71.50,enviado
+2024-03-09,Pedro Navas,Colombia,Silla,72.50,pagado
+2024-04-10,Luis Ortega,Alemania,Lampara,73.50,pendiente
+2024-05-11,Marta Diaz,Italia,Lampara,74.50,enviado
+2024-06-12,Elena Costa,Alemania,Cable,75.50,enviado
+2024-07-13,Elena Costa,España,Cable,76.50,pendiente
+2024-08-14,Elena Costa,Alemania,Lampara,77.50,pendiente
+2024-09-15,Ana Ruiz,Portugal,Lampara,78.50,pagado
+2024-10-16,Ana Ruiz,Estados Unidos,Teclado,79.50,pagado
+2024-11-17,Marta Diaz,Colombia,Lampara,80.50,pagado
+2024-12-18,Pedro Navas,Colombia,Teclado,81.50,pagado
+2024-01-19,Ana Ruiz,Colombia,Cable,82.50,pagado
+2024-02-20,Marta Diaz,España,Monitor,83.50,pagado
+2024-03-21,Marta Diaz,Estados Unidos,Cable,84.50,pagado
+2024-04-22,Elena Costa,Francia,Lampara,85.50,enviado
+2024-05-23,Luis Ortega,Portugal,Teclado,86.50,enviado
+2024-06-24,Marta Diaz,Estados Unidos,Monitor,87.50,enviado
+2024-07-25,Marta Diaz,Chile,Lampara,88.50,pendiente
+2024-08-26,Elena Costa,Argentina,Lampara,89.50,enviado
+2024-09-27,Luis Ortega,España,Cable,90.50,pendiente
+2024-10-01,Marta Diaz,Estados Unidos,Teclado,91.50,pagado
+2024-11-02,Elena Costa,Italia,Monitor,92.50,enviado
+2024-12-03,Ana Ruiz,Italia,Cable,93.50,enviado
+2024-01-04,Luis Ortega,Francia,Lampara,94.50,pagado
+2024-02-05,Ana Ruiz,Alemania,Monitor,95.50,enviado
+2024-03-06,Luis Ortega,Estados Unidos,Silla,96.50,pagado
+2024-04-07,Elena Costa,Alemania,Teclado,97.50,enviado
+2024-05-08,Marta Diaz,Portugal,Cable,98.50,pendiente
+2024-06-09,Marta Diaz,España,Lampara,99.50,pagado
+2024-07-10,Ana Ruiz,Francia,Monitor,10.50,pagado
+2024-08-11,Luis Ortega,España,Teclado,11.50,pendiente
+2024-09-12,Ana Ruiz,Estados Unidos,Monitor,12.50,pagado
+2024-10-13,Ana Ruiz,Estados Unidos,Silla,13.50,pagado
+2024-11-14,Pedro Navas,Colombia,Monitor,14.50,pendiente
+2024-12-15,Marta Diaz,España,Teclado,15.50,enviado
+2024-01-16,Ana Ruiz,México,Cable,16.50,enviado
+2024-02-17,Marta Diaz,Estados Unidos,Monitor,17.50,enviado
+2024-03-18,Elena Costa,México,Lampara,18.50,pagado
+2024-04-19,Marta Diaz,Argentina,Lampara,19.50,enviado
+2024-05-20,Luis Ortega,Chile,Teclado,20.50,pendiente
+2024-06-21,Ana Ruiz,Colombia,Cable,21.50,pendiente
+2024-07-22,Ana Ruiz,Alemania,Cable,22.50,pendiente
+2024-08-23,Pedro Navas,Estados Unidos,Teclado,23.50,enviado
+2024-09-24,Marta Diaz,España,Teclado,24.50,enviado
+2024-10-25,Marta Diaz,Francia,Monitor,25.50,pagado
+2024-11-26,Elena Costa,España,Monitor,26.50,pagado
+2024-12-27,Luis Ortega,Francia,Silla,27.50,pendiente
+2024-01-01,Luis Ortega,Argentina,Lampara,28.50,pendiente
+2024-02-02,Luis Ortega,México,Silla,29.50,pendiente
+2024-03-03,Elena Costa,Argentina,Monitor,30.50,enviado
+2024-04-04,Marta Diaz,Estados Unidos,Silla,31.50,pendiente
+2024-05-05,Ana Ruiz,Estados Unidos,Silla,32.50,pagado
+2024-06-06,Pedro Navas,España,Teclado,33.50,pendiente
+2024-07-07,Pedro Navas,España,Cable,34.50,pagado
+2024-08-08,Pedro Navas,Estados Unidos,Lampara,35.50,pagado
+2024-09-09,Marta Diaz,México,Silla,36.50,enviado
+2024-10-10,Elena Costa,España,Silla,37.50,pendiente
+2024-11-11,Luis Ortega,Estados Unidos,Lampara,38.50,enviado
+2024-12-12,Ana Ruiz,Alemania,Teclado,39.50,pagado
+2024-01-13,Pedro Navas,Italia,Lampara,40.50,pendiente
+2024-02-14,Ana Ruiz,España,Teclado,41.50,enviado
+2024-03-15,Elena Costa,Estados Unidos,Silla,42.50,pagado
+2024-04-16,Marta Diaz,Estados Unidos,Monitor,43.50,enviado
+2024-05-17,Elena Costa,Francia,Monitor,44.50,pendiente
+2024-06-18,Luis Ortega,Chile,Silla,45.50,pendiente
+2024-07-19,Marta Diaz,Chile,Monitor,46.50,enviado
+2024-08-20,Luis Ortega,Chile,Lampara,47.50,enviado
+2024-09-21,Marta Diaz,Italia,Cable,48.50,enviado
+2024-10-22,Elena Costa,Italia,Monitor,49.50,enviado
+2024-11-23,Ana Ruiz,México,Cable,50.50,pagado
+2024-12-24,Luis Ortega,Colombia,Lampara,51.50,enviado
+2024-01-25,Elena Costa,México,Teclado,52.50,enviado
+2024-02-26,Pedro Navas,Argentina,Cable,53.50,pagado
+2024-03-27,Luis Ortega,Chile,Lampara,54.50,enviado
+2024-04-01,Luis Ortega,Francia,Cable,55.50,enviado
+2024-05-02,Elena Costa,Argentina,Monitor,56.50,enviado
+2024-06-03,Marta Diaz,Argentina,Cable,57.50,enviado
+2024-07-04,Luis Ortega,Italia,Monitor,58.50,enviado
+2024-08-05,Marta Diaz,México,Silla,59.50,pagado
+2024-09-06,Ana Ruiz,Alemania,Monitor,60.50,pagado
+2024-10-07,Ana Ruiz,Chile,Silla,61.50,enviado
+2024-11-08,Marta Diaz,Estados Unidos,Monitor,62.50,enviado
+2024-12-09,Elena Costa,Francia,Cable,63.50,enviado
+2024-01-10,Pedro Navas,Estados Unidos,Cable,64.50,enviado
+2024-02-11,Marta Diaz,Estados Unidos,Teclado,65.50,pagado
+2024-03-12,Marta Diaz,Alemania,Silla,66.50,enviado
+2024-04-13,Marta Diaz,España,Lampara,67.50,enviado
+2024-05-14,Luis Ortega,Colombia,Monitor,68.50,pendiente
+2024-06-15,Ana Ruiz,Francia,Teclado,69.50,pendiente
+2024-07-16,Ana Ruiz,Estados Unidos,Monitor,70.50,pendiente
+2024-08-17,Ana Ruiz,Chile,Silla,71.50,enviado
+2024-09-18,Ana Ruiz,Colombia,Teclado,72.50,pendiente
+2024-10-19,Pedro Navas,Alemania,Cable,73.50,pendiente
+2024-11-20,Ana Ruiz,Alemania,Monitor,74.50,enviado
+2024-12-21,Elena Costa,Italia,Teclado,75.50,enviado
+2024-01-22,Luis Ortega,Alemania,Cable,76.50,enviado
+2024-02-23,Pedro Navas,Alemania,Monitor,77.50,pendiente
+2024-03-24,Elena Costa,Argentina,Silla,78.50,pendiente
+2024-04-25,Pedro Navas,Estados Unidos,Silla,79.50,pendiente
+2024-05-26,Ana Ruiz,Argentina,Cable,80.50,pagado
+2024-06-27,Ana Ruiz,Colombia,Monitor,81.50,enviado
+2024-07-01,Pedro Navas,Alemania,Teclado,82.50,pagado
+2024-08-02,Marta Diaz,Portugal,Cable,83.50,pendiente
+2024-09-03,Ana Ruiz,Francia,Cable,84.50,pagado
+2024-10-04,Elena Costa,Italia,Teclado,85.50,enviado
+2024-11-05,Pedro Navas,Colombia,Lampara,86.50,pagado
+2024-12-06,Ana Ruiz,Italia,Cable,87.50,pagado
+2024-01-07,Ana Ruiz,México,Monitor,88.50,pendiente
+2024-02-08,Marta Diaz,Chile,Teclado,89.50,enviado
+2024-03-09,Pedro Navas,Chile,Silla,90.50,enviado
+2024-04-10,Luis Ortega,Colombia,Silla,91.50,pagado
+2024-05-11,Ana Ruiz,España,Monitor,92.50,pendiente
+2024-06-12,Ana Ruiz,Francia,Cable,93.50,enviado
+2024-07-13,Luis Ortega,Portugal,Teclado,94.50,pagado
+2024-08-14,Marta Diaz,Argentina,Monitor,95.50,enviado
+2024-09-15,Luis Ortega,Italia,Silla,96.50,pendiente
+2024-10-16,Ana Ruiz,Colombia,Monitor,97.50,enviado
+2024-11-17,Ana Ruiz,México,Silla,98.50,enviado
+2024-12-18,Ana Ruiz,Chile,Teclado,99.50,pagado
+2024-01-19,Pedro Navas,Portugal,Lampara,10.50,pagado
+2024-02-20,Elena Costa,Alemania,Teclado,11.50,enviado
+2024-03-21,Ana Ruiz,Estados Unidos,Monitor,12.50,pagado
+2024-04-22,Ana Ruiz,España,Monitor,13.50,enviado
+2024-05-23,Luis Ortega,Italia,Teclado,14.50,enviado
+2024-06-24,Elena Costa,Colombia,Lampara,15.50,pendiente
+2024-07-25,Elena Costa,Chile,Teclado,16.50,enviado
+2024-08-26,Pedro Navas,México,Teclado,17.50,pagado
+2024-09-27,Luis Ortega,Colombia,Monitor,18.50,enviado
+2024-10-01,Marta Diaz,Chile,Cable,19.50,pendiente
+2024-11-02,Elena Costa,Estados Unidos,Teclado,20.50,pendiente
+2024-12-03,Ana Ruiz,España,Teclado,21.50,pagado
+2024-01-04,Marta Diaz,Argentina,Teclado,22.50,pendiente
+2024-02-05,Elena Costa,Alemania,Silla,23.50,pagado
+2024-03-06,Luis Ortega,Colombia,Monitor,24.50,pendiente
+2024-04-07,Luis Ortega,Chile,Monitor,25.50,enviado
+2024-05-08,Luis Ortega,España,Monitor,26.50,pendiente
+2024-06-09,Ana Ruiz,Estados Unidos,Teclado,27.50,pagado
+2024-07-10,Elena Costa,Italia,Teclado,28.50,pagado
+2024-08-11,Ana Ruiz,Chile,Lampara,29.50,enviado
+2024-09-12,Elena Costa,España,Lampara,30.50,pendiente
+2024-10-13,Pedro Navas,Estados Unidos,Silla,31.50,enviado
+2024-11-14,Marta Diaz,Italia,Silla,32.50,pendiente
+2024-12-15,Ana Ruiz,Argentina,Monitor,33.50,pagado
+2024-01-16,Elena Costa,España,Monitor,34.50,enviado
+2024-02-17,Marta Diaz,Francia,Cable,35.50,enviado
+2024-03-18,Pedro Navas,Chile,Teclado,36.50,enviado
+2024-04-19,Luis Ortega,Portugal,Teclado,37.50,pendiente
+2024-05-20,Pedro Navas,Chile,Silla,38.50,pagado
+2024-06-21,Pedro Navas,Francia,Silla,39.50,enviado
+2024-07-22,Marta Diaz,Portugal,Silla,40.50,pendiente
+2024-08-23,Elena Costa,Estados Unidos,Lampara,41.50,pagado
+2024-09-24,Pedro Navas,Portugal,Monitor,42.50,pendiente
+2024-10-25,Ana Ruiz,Estados Unidos,Lampara,43.50,enviado
+2024-11-26,Luis Ortega,Chile,Lampara,44.50,enviado
+2024-12-27,Luis Ortega,México,Teclado,45.50,enviado
+2024-01-01,Pedro Navas,Portugal,Cable,46.50,pendiente
+2024-02-02,Ana Ruiz,España,Silla,47.50,pagado
+2024-03-03,Pedro Navas,Alemania,Teclado,48.50,enviado
+2024-04-04,Marta Diaz,Italia,Lampara,49.50,pagado
+2024-05-05,Marta Diaz,Italia,Lampara,50.50,pagado
+2024-06-06,Pedro Navas,Portugal,Lampara,51.50,pendiente
+2024-07-07,Pedro Navas,España,Lampara,52.50,pendiente
+2024-08-08,Marta Diaz,Alemania,Teclado,53.50,pendiente
+2024-09-09,Marta Diaz,Estados Unidos,Cable,54.50,pendiente
+2024-10-10,Marta Diaz,Portugal,Cable,55.50,pagado
+2024-11-11,Luis Ortega,España,Cable,56.50,enviado
+2024-12-12,Pedro Navas,Portugal,Teclado,57.50,pagado
+2024-01-13,Pedro Navas,Chile,Teclado,58.50,pendiente
+2024-02-14,Marta Diaz,Chile,Monitor,59.50,pendiente
+2024-03-15,Elena Costa,México,Lampara,60.50,pagado
+2024-04-16,Marta Diaz,Alemania,Lampara,61.50,pendiente
+2024-05-17,Luis Ortega,Italia,Lampara,62.50,enviado
+2024-06-18,Ana Ruiz,Francia,Monitor,63.50,pagado
+2024-07-19,Pedro Navas,Italia,Lampara,64.50,pendiente
+2024-08-20,Ana Ruiz,Chile,Silla,65.50,pendiente
+2024-09-21,Pedro Navas,Portugal,Silla,66.50,pendiente
+2024-10-22,Luis Ortega,Estados Unidos,Silla,67.50,pendiente
+2024-11-23,Marta Diaz,Francia,Lampara,68.50,pagado
+2024-12-24,Pedro Navas,Estados Unidos,Lampara,69.50,enviado
+2024-01-25,Ana Ruiz,Estados Unidos,Silla,70.50,enviado
+2024-02-26,Pedro Navas,Italia,Silla,71.50,pagado
+2024-03-27,Elena Costa,Portugal,Silla,72.50,pendiente
+2024-04-01,Marta Diaz,México,Teclado,73.50,pendiente
+2024-05-02,Pedro Navas,Chile,Teclado,74.50,enviado
+2024-06-03,Marta Diaz,Colombia,Monitor,75.50,pagado
+2024-07-04,Elena Costa,España,Teclado,76.50,pendiente
+2024-08-05,Luis Ortega,México,Monitor,77.50,pagado
+2024-09-06,Ana Ruiz,Colombia,Silla,78.50,enviado
+2024-10-07,Ana Ruiz,Italia,Cable,79.50,pendiente
+2024-11-08,Luis Ortega,Estados Unidos,Silla,80.50,pagado
+2024-12-09,Ana Ruiz,Colombia,Teclado,81.50,pagado
+2024-01-10,Pedro Navas,Colombia,Cable,82.50,pendiente
+2024-02-11,Marta Diaz,México,Silla,83.50,pagado
+2024-03-12,Elena Costa,Alemania,Monitor,84.50,enviado
+2024-04-13,Marta Diaz,Colombia,Teclado,85.50,pagado
+2024-05-14,Luis Ortega,Italia,Silla,86.50,pendiente
+2024-06-15,Pedro Navas,Argentina,Cable,87.50,pendiente
+2024-07-16,Ana Ruiz,Portugal,Teclado,88.50,pagado
+2024-08-17,Ana Ruiz,Estados Unidos,Cable,89.50,pagado
+2024-09-18,Luis Ortega,España,Cable,90.50,pendiente
+2024-10-19,Luis Ortega,Argentina,Monitor,91.50,pendiente
+2024-11-20,Luis Ortega,España,Teclado,92.50,pendiente
+2024-12-21,Pedro Navas,Chile,Lampara,93.50,pagado
+2024-01-22,Marta Diaz,Portugal,Cable,94.50,pendiente
+2024-02-23,Marta Diaz,Colombia,Monitor,95.50,pendiente
+2024-03-24,Marta Diaz,Chile,Silla,96.50,pagado
+2024-04-25,Marta Diaz,Portugal,Monitor,97.50,enviado
+2024-05-26,Pedro Navas,Alemania,Silla,98.50,pagado
+2024-06-27,Pedro Navas,México,Lampara,99.50,enviado
+2024-07-01,Luis Ortega,Portugal,Teclado,10.50,enviado
+2024-08-02,Luis Ortega,Alemania,Cable,11.50,enviado
+2024-09-03,Ana Ruiz,Portugal,Cable,12.50,pendiente
+2024-10-04,Ana Ruiz,Francia,Lampara,13.50,pagado
+2024-11-05,Elena Costa,Chile,Teclado,14.50,pendiente
+2024-12-06,Luis Ortega,Francia,Silla,15.50,pagado
+2024-01-07,Ana Ruiz,Colombia,Monitor,16.50,pagado
+2024-02-08,Elena Costa,Chile,Silla,17.50,pendiente
+2024-03-09,Luis Ortega,Colombia,Lampara,18.50,pagado
+2024-04-10,Luis Ortega,España,Lampara,19.50,pendiente
+2024-05-11,Ana Ruiz,Alemania,Silla,20.50,pendiente
+2024-06-12,Ana Ruiz,México,Silla,21.50,enviado
+2024-07-13,Ana Ruiz,España,Silla,22.50,pagado
+2024-08-14,Marta Diaz,Francia,Lampara,23.50,enviado
+2024-09-15,Elena Costa,Italia,Cable,24.50,enviado
+2024-10-16,Marta Diaz,Argentina,Monitor,25.50,enviado
+2024-11-17,Ana Ruiz,España,Lampara,26.50,enviado
+2024-12-18,Pedro Navas,Estados Unidos,Monitor,27.50,pendiente
+2024-01-19,Ana Ruiz,Italia,Teclado,28.50,enviado
+2024-02-20,Marta Diaz,Italia,Teclado,29.50,pendiente
+2024-03-21,Ana Ruiz,México,Lampara,30.50,pendiente
+2024-04-22,Marta Diaz,Francia,Silla,31.50,pagado
+2024-05-23,Ana Ruiz,España,Teclado,32.50,pendiente
+2024-06-24,Marta Diaz,Portugal,Monitor,33.50,pendiente
+2024-07-25,Ana Ruiz,Argentina,Cable,34.50,pendiente
+2024-08-26,Marta Diaz,Colombia,Teclado,35.50,enviado
+2024-09-27,Pedro Navas,Argentina,Lampara,36.50,pagado
+2024-10-01,Elena Costa,Francia,Silla,37.50,pendiente
+2024-11-02,Luis Ortega,Alemania,Cable,38.50,enviado
+2024-12-03,Pedro Navas,Alemania,Silla,39.50,pagado
+2024-01-04,Pedro Navas,Colombia,Silla,40.50,enviado
+2024-02-05,Elena Costa,Alemania,Teclado,41.50,pendiente
+2024-03-06,Luis Ortega,Portugal,Monitor,42.50,pagado
+2024-04-07,Ana Ruiz,México,Silla,43.50,pagado
+2024-05-08,Pedro Navas,España,Lampara,44.50,pendiente
+2024-06-09,Luis Ortega,España,Teclado,45.50,pendiente
+2024-07-10,Elena Costa,Portugal,Teclado,46.50,enviado
+2024-08-11,Luis Ortega,Colombia,Cable,47.50,pendiente
+2024-09-12,Luis Ortega,Argentina,Teclado,48.50,pendiente
+2024-10-13,Luis Ortega,Francia,Cable,49.50,enviado
+2024-11-14,Pedro Navas,España,Teclado,50.50,pagado
+2024-12-15,Pedro Navas,México,Teclado,51.50,enviado
+2024-01-16,Luis Ortega,Alemania,Cable,52.50,pendiente
+2024-02-17,Pedro Navas,Estados Unidos,Cable,53.50,pagado
+2024-03-18,Ana Ruiz,Argentina,Teclado,54.50,pagado
+2024-04-19,Luis Ortega,Chile,Teclado,55.50,pendiente
+2024-05-20,Luis Ortega,Francia,Silla,56.50,pendiente
+2024-06-21,Marta Diaz,España,Cable,57.50,pagado
+2024-07-22,Luis Ortega,Chile,Lampara,58.50,pendiente
+2024-08-23,Ana Ruiz,España,Cable,59.50,enviado
+2024-09-24,Elena Costa,Italia,Teclado,60.50,enviado
+2024-10-25,Luis Ortega,Italia,Cable,61.50,enviado
+2024-11-26,Luis Ortega,Argentina,Monitor,62.50,pagado
+2024-12-27,Luis Ortega,Alemania,Teclado,63.50,pagado
+2024-01-01,Pedro Navas,Portugal,Monitor,64.50,pendiente
+2024-02-02,Pedro Navas,México,Teclado,65.50,pagado
+2024-03-03,Pedro Navas,Alemania,Lampara,66.50,enviado
+2024-04-04,Elena Costa,Argentina,Cable,67.50,enviado
+2024-05-05,Ana Ruiz,Chile,Cable,68.50,pagado
+2024-06-06,Luis Ortega,México,Cable,69.50,pagado
+2024-07-07,Marta Diaz,Portugal,Lampara,70.50,pendiente
+2024-08-08,Ana Ruiz,Alemania,Monitor,71.50,pendiente
+2024-09-09,Marta Diaz,México,Cable,72.50,pagado
+2024-10-10,Elena Costa,Estados Unidos,Lampara,73.50,enviado
+2024-11-11,Elena Costa,Argentina,Monitor,74.50,pagado
+2024-12-12,Pedro Navas,Argentina,Lampara,75.50,pendiente
+2024-01-13,Ana Ruiz,Francia,Silla,76.50,pagado
+2024-02-14,Luis Ortega,Argentina,Monitor,77.50,pagado
+2024-03-15,Ana Ruiz,Francia,Cable,78.50,pagado
+2024-04-16,Pedro Navas,Italia,Teclado,79.50,enviado
+2024-05-17,Pedro Navas,Francia,Silla,80.50,pendiente
+2024-06-18,Marta Diaz,Portugal,Monitor,81.50,pendiente
+2024-07-19,Pedro Navas,México,Silla,82.50,pagado
+2024-08-20,Luis Ortega,Francia,Lampara,83.50,enviado
+2024-09-21,Luis Ortega,México,Teclado,84.50,pagado
+2024-10-22,Elena Costa,Alemania,Cable,85.50,pagado
+2024-11-23,Marta Diaz,Italia,Lampara,86.50,pagado
+2024-12-24,Ana Ruiz,España,Lampara,87.50,pendiente
+2024-01-25,Luis Ortega,Estados Unidos,Lampara,88.50,pagado
+2024-02-26,Luis Ortega,Colombia,Teclado,89.50,enviado
+2024-03-27,Marta Diaz,España,Monitor,90.50,pendiente
+2024-04-01,Pedro Navas,Colombia,Lampara,91.50,enviado
+2024-05-02,Elena Costa,Argentina,Monitor,92.50,pendiente
+2024-06-03,Pedro Navas,México,Cable,93.50,pagado
+2024-07-04,Pedro Navas,Alemania,Teclado,94.50,pagado
+2024-08-05,Elena Costa,Colombia,Silla,95.50,pendiente
+2024-09-06,Elena Costa,Portugal,Silla,96.50,enviado
+2024-10-07,Marta Diaz,Portugal,Monitor,97.50,pendiente
+2024-11-08,Luis Ortega,Alemania,Cable,98.50,pagado
+2024-12-09,Luis Ortega,Estados Unidos,Monitor,99.50,pagado
+2024-01-10,Elena Costa,Estados Unidos,Lampara,10.50,pendiente
+2024-02-11,Elena Costa,Francia,Lampara,11.50,pagado
+2024-03-12,Marta Diaz,Alemania,Cable,12.50,enviado
+2024-04-13,Marta Diaz,España,Silla,13.50,enviado
+2024-05-14,Marta Diaz,Estados Unidos,Silla,14.50,pendiente
+2024-06-15,Luis Ortega,Italia,Monitor,15.50,pendiente
+2024-07-16,Pedro Navas,Chile,Silla,16.50,pagado
+2024-08-17,Elena Costa,España,Monitor,17.50,pendiente
+2024-09-18,Ana Ruiz,Estados Unidos,Cable,18.50,enviado
+2024-10-19,Pedro Navas,Italia,Teclado,19.50,pendiente
+2024-11-20,Ana Ruiz,Estados Unidos,Lampara,20.50,pendiente
+2024-12-21,Pedro Navas,Alemania,Lampara,21.50,pendiente
+2024-01-22,Ana Ruiz,Alemania,Monitor,22.50,enviado
+2024-02-23,Elena Costa,Alemania,Lampara,23.50,pagado
+2024-03-24,Marta Diaz,Alemania,Silla,24.50,pagado
+2024-04-25,Pedro Navas,Chile,Monitor,25.50,pendiente
+2024-05-26,Ana Ruiz,Chile,Lampara,26.50,pagado
+2024-06-27,Ana Ruiz,México,Lampara,27.50,pagado
+2024-07-01,Elena Costa,Argentina,Silla,28.50,pagado
+2024-08-02,Marta Diaz,Portugal,Lampara,29.50,pendiente
+2024-09-03,Elena Costa,Estados Unidos,Lampara,30.50,enviado
+2024-10-04,Elena Costa,Portugal,Monitor,31.50,enviado
+2024-11-05,Elena Costa,Portugal,Silla,32.50,pagado
+2024-12-06,Pedro Navas,Portugal,Cable,33.50,enviado
+2024-01-07,Pedro Navas,Alemania,Teclado,34.50,pendiente
+2024-02-08,Marta Diaz,México,Silla,35.50,enviado
+2024-03-09,Pedro Navas,Estados Unidos,Silla,36.50,pagado
+2024-04-10,Marta Diaz,Argentina,Lampara,37.50,enviado
+2024-05-11,Ana Ruiz,México,Cable,38.50,enviado
+2024-06-12,Elena Costa,España,Cable,39.50,enviado
+2024-07-13,Luis Ortega,Chile,Silla,40.50,pendiente
+2024-08-14,Marta Diaz,Chile,Silla,41.50,pendiente
+2024-09-15,Elena Costa,Portugal,Teclado,42.50,pendiente
+2024-10-16,Luis Ortega,Colombia,Monitor,43.50,pagado
+2024-11-17,Elena Costa,Argentina,Cable,44.50,enviado
+2024-12-18,Ana Ruiz,Italia,Lampara,45.50,pendiente
+2024-01-19,Ana Ruiz,Francia,Cable,46.50,pendiente
+2024-02-20,Ana Ruiz,Italia,Lampara,47.50,enviado
+2024-03-21,Elena Costa,México,Lampara,48.50,pagado
+2024-04-22,Luis Ortega,Chile,Silla,49.50,enviado
+2024-05-23,Luis Ortega,Portugal,Teclado,50.50,enviado
+2024-06-24,Elena Costa,España,Lampara,51.50,pendiente
+2024-07-25,Luis Ortega,Colombia,Silla,52.50,pagado
+2024-08-26,Pedro Navas,Alemania,Cable,53.50,pagado
+2024-09-27,Luis Ortega,Francia,Teclado,54.50,enviado
+2024-10-01,Marta Diaz,Francia,Teclado,55.50,enviado
+2024-11-02,Luis Ortega,Italia,Monitor,56.50,pendiente
+2024-12-03,Luis Ortega,Italia,Lampara,57.50,pagado
+2024-01-04,Marta Diaz,Chile,Silla,58.50,pagado
+2024-02-05,Pedro Navas,Francia,Monitor,59.50,pagado
+2024-03-06,Marta Diaz,Alemania,Teclado,60.50,pagado
+2024-04-07,Elena Costa,México,Silla,61.50,pagado
+2024-05-08,Pedro Navas,Colombia,Monitor,62.50,pagado
+2024-06-09,Pedro Navas,Alemania,Lampara,63.50,enviado
+2024-07-10,Ana Ruiz,Portugal,Monitor,64.50,pagado
+2024-08-11,Pedro Navas,Colombia,Lampara,65.50,pagado
+2024-09-12,Ana Ruiz,Italia,Teclado,66.50,pagado
+2024-10-13,Luis Ortega,Italia,Cable,67.50,enviado
+2024-11-14,Ana Ruiz,Colombia,Silla,68.50,enviado
+2024-12-15,Pedro Navas,Alemania,Lampara,69.50,pendiente
+2024-01-16,Marta Diaz,Colombia,Silla,70.50,enviado
+2024-02-17,Elena Costa,Francia,Teclado,71.50,pendiente
+2024-03-18,Pedro Navas,Colombia,Cable,72.50,enviado
+2024-04-19,Pedro Navas,Estados Unidos,Lampara,73.50,pagado
+2024-05-20,Marta Diaz,Chile,Monitor,74.50,enviado
+2024-06-21,Ana Ruiz,México,Lampara,75.50,pagado
+2024-07-22,Ana Ruiz,Alemania,Silla,76.50,enviado
+2024-08-23,Luis Ortega,Estados Unidos,Lampara,77.50,enviado
+2024-09-24,Elena Costa,Portugal,Silla,78.50,pendiente
+2024-10-25,Luis Ortega,España,Silla,79.50,enviado
+2024-11-26,Luis Ortega,Colombia,Lampara,80.50,pendiente
+2024-12-27,Elena Costa,Estados Unidos,Cable,81.50,pendiente
+2024-01-01,Elena Costa,Italia,Lampara,82.50,enviado
+2024-02-02,Pedro Navas,Chile,Monitor,83.50,enviado
+2024-03-03,Luis Ortega,Alemania,Teclado,84.50,pendiente
+2024-04-04,Luis Ortega,México,Teclado,85.50,pendiente
+2024-05-05,Elena Costa,Chile,Monitor,86.50,pagado
+2024-06-06,Marta Diaz,México,Cable,87.50,pendiente
+2024-07-07,Luis Ortega,Alemania,Monitor,88.50,pagado
+2024-08-08,Elena Costa,Colombia,Silla,89.50,enviado
+2024-09-09,Marta Diaz,Estados Unidos,Teclado,90.50,enviado
+2024-10-10,Pedro Navas,Alemania,Teclado,91.50,pagado
+2024-11-11,Pedro Navas,Argentina,Silla,92.50,enviado
+2024-12-12,Elena Costa,España,Silla,93.50,enviado
+2024-01-13,Luis Ortega,México,Teclado,94.50,enviado
+2024-02-14,Elena Costa,Italia,Lampara,95.50,pagado
+2024-03-15,Pedro Navas,Alemania,Silla,96.50,pendiente
+2024-04-16,Marta Diaz,Colombia,Silla,97.50,pagado
+2024-05-17,Elena Costa,México,Lampara,98.50,pagado
+2024-06-18,Ana Ruiz,Italia,Lampara,99.50,pagado
+2024-07-19,Pedro Navas,Colombia,Monitor,10.50,enviado
+2024-08-20,Pedro Navas,Italia,Silla,11.50,pendiente
+2024-09-21,Elena Costa,Portugal,Monitor,12.50,pendiente
+2024-10-22,Luis Ortega,Colombia,Monitor,13.50,enviado
+2024-11-23,Marta Diaz,Italia,Silla,14.50,enviado
+2024-12-24,Marta Diaz,Portugal,Monitor,15.50,pendiente
+2024-01-25,Marta Diaz,Estados Unidos,Monitor,16.50,enviado
+2024-02-26,Elena Costa,España,Monitor,17.50,enviado
+2024-03-27,Pedro Navas,Estados Unidos,Lampara,18.50,pagado
+2024-04-01,Marta Diaz,Francia,Lampara,19.50,enviado
+13/03/2024,Luis Ortega,Italia,Cable,10.50,pendiente
+2024-02-02,Elena Costa,México,Lampara,11.50,pagado
+2024-03-03,Elena Costa,Italia,Teclado,12.50,enviado
+2024-04-04,Elena Costa,Estados Unidos,Silla,13.50,enviado
+2024-05-05,Luis Ortega,Estados Unidos,Lampara,14.50,pendiente
+2024-06-06,Elena Costa,México,Lampara,15.50,pendiente
+2024-07-07,Ana Ruiz,Italia,Lampara,16.50,pendiente
+2024-08-08,Pedro Navas,Chile,Teclado,17.50,pendiente
+2024-09-09,Luis Ortega,Alemania,Monitor,18.50,enviado
+2024-10-10,Ana Ruiz,España,Monitor,19.50,pendiente
+2024-11-11,Pedro Navas,Alemania,Monitor,20.50,enviado
+2024-12-12,Luis Ortega,Italia,Lampara,21.50,enviado
+2024-01-13,Luis Ortega,Argentina,Teclado,22.50,pagado
+2024-02-14,Elena Costa,Francia,Monitor,23.50,pendiente
+2024-03-15,Luis Ortega,Chile,Teclado,24.50,pendiente
+2024-04-16,Ana Ruiz,Alemania,Lampara,25.50,pendiente
+2024-05-17,Marta Diaz,Argentina,Monitor,26.50,pendiente
+2024-06-18,Pedro Navas,Francia,Cable,27.50,enviado
+2024-07-19,Ana Ruiz,Portugal,Cable,28.50,pendiente
+2024-08-20,Elena Costa,Colombia,Monitor,29.50,pendiente
+2024-09-21,Luis Ortega,España,Teclado,30.50,pagado
+2024-10-22,Pedro Navas,Italia,Teclado,31.50,pagado
+2024-11-23,Ana Ruiz,Estados Unidos,Monitor,32.50,pendiente
+2024-12-24,Marta Diaz,Italia,Silla,33.50,enviado
+2024-01-25,Elena Costa,España,Cable,34.50,enviado
+32/13/2024,Ana Ruiz,España,Teclado,10.00,pagado
+marzo,Ana Ruiz,España,Teclado,10.00,pagado
+,Ana Ruiz,España,Teclado,10.00,pagado
+32/13/2024,Ana Ruiz,España,Teclado,10.00,pagado
+marzo,Ana Ruiz,España,Teclado,10.00,pagado
+,Ana Ruiz,España,Teclado,10.00,pagado
+32/13/2024,Ana Ruiz,España,Teclado,10.00,pagado
+marzo,Ana Ruiz,España,Teclado,10.00,pagado
+,Ana Ruiz,España,Teclado,10.00,pagado
+32/13/2024,Ana Ruiz,España,Teclado,10.00,pagado
+marzo,Ana Ruiz,España,Teclado,10.00,pagado
+,Ana Ruiz,España,Teclado,10.00,pagado
+32/13/2024,Ana Ruiz,España,Teclado,10.00,pagado
+marzo,Ana Ruiz,España,Teclado,10.00,pagado
+,Ana Ruiz,España,Teclado,10.00,pagado
+2024-01-02,Ana Ruiz,España,Teclado,,pagado
+2024-01-02,Ana Ruiz,España,Teclado,,pagado
+2024-01-02,Ana Ruiz,España,Teclado,,pagado
+2024-01-02,Ana Ruiz,España,Teclado,,pagado
+2024-01-02,Ana Ruiz,España,Teclado,,pagado
+2024-01-02,Ana Ruiz,España,Teclado,,pagado
+2024-01-02,Ana Ruiz,España,Teclado,,pagado
+2024-01-02,Ana Ruiz,España,Teclado,,pagado
+2024-01-02,Ana Ruiz,España,Teclado,,pagado
+2024-01-02,Ana Ruiz,España,Teclado,,pagado
+2024-01-02,Ana Ruiz,España,Teclado,,pagado
+2024-01-02,Ana Ruiz,España,Teclado,,pagado
+2024-01-02,Ana Ruiz,España,Teclado,,pagado
+2024-01-02,Ana Ruiz,España,Teclado,,pagado
+2024-01-02,Ana Ruiz,España,Teclado,,pagado
