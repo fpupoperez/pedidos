@@ -17,7 +17,7 @@ from opentelemetry.sdk.metrics import MeterProvider
 from opentelemetry.sdk.metrics.export import ConsoleMetricExporter, PeriodicExportingMetricReader
 from opentelemetry.sdk.resources import Resource
 from opentelemetry.sdk.trace import ReadableSpan, TracerProvider
-from opentelemetry.sdk.trace.export import BatchSpanProcessor, SpanExporter, SpanExportResult
+from opentelemetry.sdk.trace.export import BatchSpanProcessor, SimpleSpanProcessor, SpanExporter, SpanExportResult
 
 from app.core.config import Settings
 
@@ -85,7 +85,10 @@ def configure_telemetry(
     resource = Resource.create({"service.name": service_name})
     provider = TracerProvider(resource=resource)
     exporter, metric_readers = _destinations(settings, span_exporter)
-    provider.add_span_processor(BatchSpanProcessor(exporter))
+    if span_exporter is not None:
+        provider.add_span_processor(SimpleSpanProcessor(exporter))
+    else:
+        provider.add_span_processor(BatchSpanProcessor(exporter))
     trace.set_tracer_provider(provider)
     metrics.set_meter_provider(MeterProvider(resource=resource, metric_readers=metric_readers))
     meter = metrics.get_meter("orders")

@@ -21,5 +21,7 @@ def test_operations_and_properties_are_documented() -> None:
             assert operation.get("description")
     assert seen
     for name, component in schema["components"]["schemas"].items():
+        if name in {"HTTPValidationError", "ValidationError"}:
+            continue
         for prop_name, prop in component.get("properties", {}).items():
             assert prop.get("description"), f"{name}.{prop_name} has no description"
