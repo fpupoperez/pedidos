@@ -40,3 +40,11 @@ def test_inline_import_shares_one_trace(client: TestClient, finished_spans: InMe
         assert task.trace_id
         accept = next(item for item in finished_spans.get_finished_spans() if item.name == "import.accept")
         assert task.trace_id == format(accept.context.trace_id, "032x")
+
+
+def test_question_spans_are_one_tree(client: TestClient, finished_spans: InMemorySpanExporter) -> None:
+    """question.llm, question.guard, and question.execute sit under question.ask."""
+    response = client.post("/api/v1/questions", json={"question": "¿cuánto hay?"})
+    assert response.status_code == 200
+    names = {item.name for item in finished_spans.get_finished_spans()}
+    assert {"question.ask", "question.llm", "question.guard", "question.execute"} <= names

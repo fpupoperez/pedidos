@@ -18,6 +18,8 @@ FastAPI service in `backend/app`. JSON routes return `{session_auth, errors, suc
 | `worker/handler.py` | Claims the task with `SELECT ... FOR UPDATE` and commits the orders. |
 | `app/nats/publisher.py` | Publishes `orders.import` when delivery is `jetstream`. |
 | `worker/main.py` | Push consumer. Queue group `orders_import_worker`. |
+| `app/sql/validator.py` | One read-only SELECT. Other relations and writes are refused. |
+| `app/api/v1/questions.py` | `ask_question`. Tests use the fake provider. |
 
 OpenAPI is `/api/v1/docs`. `operation_id` values stay stable.
 

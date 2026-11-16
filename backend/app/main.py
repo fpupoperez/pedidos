@@ -14,6 +14,7 @@ from app.api.openapi import OPENAPI_DESCRIPTION, OPENAPI_TAGS
 from app.api.v1.health import router as health_router
 from app.api.v1.imports import router as imports_router
 from app.api.v1.orders import router as orders_router
+from app.api.v1.questions import router as questions_router
 from app.api.v1.tasks import router as tasks_router
 from app.core.config import get_settings
 from app.core.errors import ApiError
@@ -49,6 +50,7 @@ def create_app() -> FastAPI:
     app.include_router(imports_router, prefix="/api/v1")
     app.include_router(tasks_router, prefix="/api/v1")
     app.include_router(orders_router, prefix="/api/v1")
+    app.include_router(questions_router, prefix="/api/v1")
     app.add_exception_handler(ApiError, _api_error)
     app.add_exception_handler(RequestValidationError, _validation_error)
     app.add_exception_handler(StarletteHTTPException, _http_error)
