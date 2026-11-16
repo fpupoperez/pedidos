@@ -20,6 +20,7 @@ FastAPI service in `backend/app`. JSON routes return `{session_auth, errors, suc
 | `worker/main.py` | Push consumer. Queue group `orders_import_worker`. |
 | `app/sql/validator.py` | One read-only SELECT. Other relations and writes are refused. |
 | `app/api/v1/questions.py` | `ask_question`. Tests use the fake provider. |
+| `app/providers/litellm.py` | OpenAI-compatible chat completion. The key stays in the environment. |
 
 OpenAPI is `/api/v1/docs`. `operation_id` values stay stable.
 

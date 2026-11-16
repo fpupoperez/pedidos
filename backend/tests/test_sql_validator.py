@@ -30,6 +30,8 @@ def test_writes_and_hidden_statements_are_rejected() -> None:
     """Writes, a second statement, pg_ functions, and SELECT INTO do not reach the database."""
     cases = {
         "DROP TABLE orders": "not_select",
+        "INSERT INTO orders (country) VALUES ('España')": "not_select",
+        "SELECT pg_read_file('/etc/passwd')": "function_not_allowed",
         "SELECT country FROM orders; SELECT country FROM orders": "multiple_statements",
         "SELECT country FROM orders; -- hidden\nDROP TABLE orders": "multiple_statements",
         "SELECT pg_sleep(1)": "function_not_allowed",

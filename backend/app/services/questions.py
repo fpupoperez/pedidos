@@ -6,7 +6,9 @@ import time
 from app.core.config import get_settings
 from app.core.errors import ApiError
 from app.core.telemetry import record_llm, record_question, span
+from app.providers.base import ModelProvider
 from app.providers.fake import FakeProvider
+from app.providers.litellm import LiteLLMProvider
 from app.schemas.questions import QuestionData
 from app.sql.execute import execute_select
 from app.sql.validator import GuardError, validate_sql
@@ -49,13 +51,13 @@ def _ask(question: str) -> QuestionData:
     return QuestionData(sql=checked, columns=columns, rows=rows, row_count=len(rows), truncated=truncated)
 
 
-def _provider() -> FakeProvider:
-    """The configured provider. Anything other than fake is refused in this step."""
+def _provider() -> ModelProvider:
+    """fake in tests. litellm calls the configured OpenAI-compatible endpoint."""
     name = get_settings().llm_provider
     if name == "fake":
         return FakeProvider()
     if name == "litellm":
-        raise ApiError(502, "The model response was not valid.")
+        return LiteLLMProvider()
     raise ApiError(502, "The model response was not valid.")
 
 

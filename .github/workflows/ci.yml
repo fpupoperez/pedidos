@@ -1,0 +1,52 @@
+name: ci
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: orders
+          POSTGRES_PASSWORD: orders
+          POSTGRES_DB: orders
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U orders -d orders"
+          --health-interval 5s
+          --health-timeout 3s
+          --health-retries 20
+    env:
+      DATABASE_URL: postgresql+psycopg://orders:orders@localhost:5432/orders_test
+      DATABASE_READ_URL: postgresql+psycopg://orders_reader:orders_reader@localhost:5432/orders_test
+      NATS_URL: nats://localhost:4222
+      NATS_DELIVERY: inline
+      LLM_PROVIDER: fake
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Start JetStream
+        run: docker run -d --name nats -p 4222:4222 -p 8222:8222 nats:2.10 -js -m 8222
+      - name: Install
+        run: pip install -r backend/requirements.txt -r backend/requirements-dev.txt
+      - name: Create the test database
+        run: python -c "import psycopg; c=psycopg.connect('postgresql://orders:orders@localhost:5432/orders', autocommit=True); c.execute('CREATE DATABASE orders_test')"
+      - name: Lint
+        run: ruff check backend worker scripts
+      - name: Types
+        run: mypy
+      - name: Test
+        working-directory: backend
+        run: python -m pytest -o addopts='-q' -m "not nats" --cov=app --cov=worker --cov-fail-under=90
+      - name: JetStream
+        working-directory: backend
+        env:
+          NATS_DELIVERY: jetstream
+        run: python -m pytest -o addopts='-q' -m nats
