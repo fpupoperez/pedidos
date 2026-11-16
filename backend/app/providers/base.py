@@ -1,5 +1,7 @@
 """The prompt shared by every provider. It names the only relations the guard allows."""
 
+from typing import Protocol
+
 from app.domain.countries import CANONICAL_COUNTRIES
 
 SYSTEM_PROMPT = f"""
@@ -16,3 +18,13 @@ A filtered total uses orders. A month and country total may use sales_by_month_c
 sale_month and order_date are dates. Store and compare countries with these Spanish names:
 {", ".join(CANONICAL_COUNTRIES)}.
 """.strip()
+
+
+class ModelProvider(Protocol):
+    """One model call. The text is parsed by the question service, not executed raw."""
+
+    name: str
+    model: str
+
+    def complete(self, question: str) -> tuple[str, int, int]:
+        """Return the model text, input tokens, and output tokens."""

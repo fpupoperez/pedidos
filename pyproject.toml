@@ -29,4 +29,5 @@ warn_required_dynamic_aliases = false
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 pythonpath = [".", ".."]
-addopts = "-q"
+addopts = "-q -m 'not nats'"
+markers = ["nats: requires a JetStream server"]
