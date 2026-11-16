@@ -16,6 +16,8 @@ FastAPI service in `backend/app`. JSON routes return `{session_auth, errors, suc
 | `app/api/v1/imports.py` | `create_import`. Inline delivery finishes before the 202 response. |
 | `app/api/v1/tasks.py` | Status, cancel, retry, rejections, and the original file. |
 | `worker/handler.py` | Claims the task with `SELECT ... FOR UPDATE` and commits the orders. |
+| `app/nats/publisher.py` | Publishes `orders.import` when delivery is `jetstream`. |
+| `worker/main.py` | Push consumer. Queue group `orders_import_worker`. |
 
 OpenAPI is `/api/v1/docs`. `operation_id` values stay stable.
 

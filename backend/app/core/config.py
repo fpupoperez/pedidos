@@ -32,6 +32,7 @@ class Settings(BaseSettings):
     question_timeout_ms: int = 3000
     import_batch_size: int = 200
     ack_wait_seconds: int = 120
+    nats_max_deliver: int = 4
     auth_required: bool = False
     otel_service_name: str = "orders-api"
     otel_exporter_otlp_endpoint: str = ""
