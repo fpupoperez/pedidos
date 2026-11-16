@@ -12,7 +12,7 @@ select = ["E4", "E7", "E9", "F"]
 [tool.mypy]
 python_version = "3.11"
 mypy_path = "backend"
-files = ["backend/app", "worker"]
+files = ["backend/app", "worker", "scripts/generate_orders_csv.py"]
 exclude = ["backend/\\.venv", "backend/migrations", "backend/tests"]
 plugins = ["pydantic.mypy"]
 ignore_missing_imports = true

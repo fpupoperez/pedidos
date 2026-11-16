@@ -23,3 +23,9 @@ make test
 ```
 
 `make test` refuses a database named `orders`. Point `DATABASE_URL` at `orders_test`.
+
+Imports, the worker, and questions are not wired yet. The cleaner and the sample CSV generator are in place:
+
+```bash
+PYTHONPATH=backend .venv/bin/python -m scripts.generate_orders_csv
+```
