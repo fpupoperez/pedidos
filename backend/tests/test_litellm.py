@@ -1,5 +1,7 @@
 """The litellm provider parses a chat completion and refuses a bad response."""
 
+from datetime import date
+
 import httpx
 import pytest
 
@@ -23,6 +25,10 @@ def test_completion_returns_sql_and_token_counts(monkeypatch: pytest.MonkeyPatch
     def handler(request: httpx.Request) -> httpx.Response:
         assert request.url.path == "/v1/chat/completions"
         assert request.headers["authorization"] == "Bearer secret"
+        body = request.read().decode()
+        assert "Do not invent a year" in body
+        assert "este año" in body
+        assert str(date.today().year) in body
         return httpx.Response(
             200,
             json={
